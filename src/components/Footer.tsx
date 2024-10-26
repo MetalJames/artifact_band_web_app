@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div>All rights reserved to Artifact Band</div>
+        <div className="flex justify-center">All rights reserved to Artifact Band</div>
     )
 }
 

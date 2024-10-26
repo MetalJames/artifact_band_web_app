@@ -12,9 +12,9 @@ export const navLinks = [
         link: "/music",
     },
     {
-        id: "aboutus",
-        title: "About Us",
-        link: "/about_us",
+        id: "band",
+        title: "Band",
+        link: "/band",
     },
 ]
 
@@ -22,7 +22,7 @@ export const albums = [
     {
         id: "dead_silence",
         title: "Dead Silence",
-        year: "2012",
+        year: 2012,
         cover: DeadSilence,
         songs: [
             { title: "Moving to be Fast", length: "3:29" },
@@ -41,7 +41,7 @@ export const albums = [
     {
         id: "silent_storm",
         title: "Silent Storm",
-        year: "2020",
+        year: 2020,
         cover: SilentStorm,
         songs: [
             { title: "Silent Storm", length: "3:28" },
@@ -50,7 +50,7 @@ export const albums = [
     {
         id: "no_one",
         title: "No One",
-        year: "2024",
+        year: 2024,
         cover: NoOneIMG,
         songs: [
             { title: "No One", length: "5:19" },

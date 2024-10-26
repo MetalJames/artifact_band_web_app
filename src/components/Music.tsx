@@ -5,7 +5,7 @@ console.log(albums)
 
 const Music = () => {
     return (
-        <div className="bg-black text-white p-8 grid gap-8 grid-cols-1 md:grid-cols-3">
+        <div className="p-8 grid gap-8 grid-cols-1 md:grid-cols-3">
             {albums.map(({id, title, year, cover}) => (
                 <Link to={`/music/${id}`} key={id} className="group">
                     <div className="relative">
