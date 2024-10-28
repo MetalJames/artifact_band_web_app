@@ -39,15 +39,6 @@ export const albums = [
         ]
     },
     {
-        id: "silent_storm",
-        title: "Silent Storm",
-        year: 2020,
-        cover: SilentStorm,
-        songs: [
-            { title: "Silent Storm", length: "3:28" },
-        ]
-    },
-    {
         id: "no_one",
         title: "No One",
         year: 2024,
@@ -66,4 +57,16 @@ export const albums = [
             { title: "Farewell (Outro Instrumental)", length: "2:23" },
         ]
     }
+]
+
+export const singles = [
+        {
+        id: "silent_storm",
+        title: "Silent Storm",
+        year: 2020,
+        cover: SilentStorm,
+        songs: [
+            { title: "Silent Storm", length: "3:28" },
+        ]
+    },
 ]
