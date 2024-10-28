@@ -3,7 +3,7 @@ import { navLinks } from "../utils/constants"
 import { ArtifactLogo } from "../assets"
 
 const NavBar = () => {
-    console.log(navLinks)
+    // console.log(navLinks)
     return (
         <nav className="flex justify-between px-4 py-4">
             <Link to={"/"}><img src={ArtifactLogo} alt="Artifact Band Logo" className="w-10" /></Link>

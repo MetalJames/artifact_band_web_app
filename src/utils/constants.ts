@@ -55,7 +55,20 @@ export const albums = [
             { title: "Deception's Grid", length: "3:44" },
             { title: "Trapped Inside", length: "3:43" },
             { title: "Farewell (Outro Instrumental)", length: "2:23" },
-        ]
+        ],
+        albumInfo: {
+                introduction: "Created in the solitude of Artifact Studio, 'No One' brings forth raw, unfiltered energy, capturing the intense isolation and introspection of the recording process. Vocals were recorded in a makeshift vocal booth — my closet — further underscoring the DIY spirit that shaped this album.",
+                credits: {
+                    instrumentsAndProduction: "All Instruments, Vocals, and Production by Volodymyr Ruzhak",
+                    recordingLocation: "Recorded and Mixed at Artifact Studio",
+                    mastering: "Mastered: Self-mastered"
+                },
+                artworkAndDesign: {
+                    coverArt: "Album Cover Art by Lucas Black...",
+                    layoutDesign: "Design and Layout by Iuliia Polinovska"
+                },
+                specialThanks: "I would like to extend my gratitude to my family, friends, and fans who continue to inspire and support me through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
+            }
     }
 ]
 
