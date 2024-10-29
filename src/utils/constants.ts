@@ -36,7 +36,25 @@ export const albums = [
             { title: "Native Land", length: "6:29" },
             { title: "Town of Dreams", length: "4:32" },
             { title: "Outro", length: "1:27" },
-        ]
+        ],
+        albumInfo: {
+            introduction: "Recorded in the small Artifact Studio, Dead Silence captures the raw, collective spirit of our band’s journey. Originally a four-member group, the album became a trio after one guitarist departed during recording. With Volodymyr Ruzhak on lead vocals, solo, and rhythm guitar, Igor Grant on drums, and Viktor Matushek on bass, each member contributed to the songwriting process and taking a part of backing vocals, adding depth and texture to each track.",
+            credits: {
+                instrumentsAndProduction: "All Instruments and Vocals by Volodymyr Ruzhak, Igor Grant, and Viktor Matushek. Backing Vocals also by Igor Grant and Viktor Matushek.",
+                songwriting: [
+                    { song: "Moving to be Fast", music: "Roman Yarema", lyrics: "Volodymyr Ruzhak" },
+                    { song: "Town of Dreams", music: "Band collaboration", lyrics: "Viktor Matushek" },
+                    { song: "All Other Tracks", music: "Band collaboration", lyrics: "Volodymyr Ruzhak, with contributions from the band" }
+                ],
+                recordingLocation: "Recorded at Artifact Studio",
+                mastering: "Mastered by Volodymyr Ruzhak"
+            },
+            artworkAndDesign: {
+                coverArt: "Album Cover Art by Iuliia Polinovska. The cover features a dark and empty 'Town of Dreams'—a cityscape in stark black and white lines, with a blurred, haunting Artifact logo, symbolizing the ‘dead silence’ that permeates the album.",
+                layoutDesign: "Design and Layout by Iuliia Polinovska"
+            },
+            specialThanks: "We would like to extend our gratitude to our families, friends, and fans who continue to inspire and support us through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
+        }
     },
     {
         id: "no_one",
@@ -57,18 +75,19 @@ export const albums = [
             { title: "Farewell (Outro Instrumental)", length: "2:23" },
         ],
         albumInfo: {
-                introduction: "Created in the solitude of Artifact Studio, 'No One' brings forth raw, unfiltered energy, capturing the intense isolation and introspection of the recording process. Vocals were recorded in a makeshift vocal booth — my closet — further underscoring the DIY spirit that shaped this album.",
-                credits: {
-                    instrumentsAndProduction: "All Instruments, Vocals, and Production by Volodymyr Ruzhak",
-                    recordingLocation: "Recorded and Mixed at Artifact Studio",
-                    mastering: "Mastered: Self-mastered"
-                },
-                artworkAndDesign: {
-                    coverArt: "Album Cover Art by Lucas Black...",
-                    layoutDesign: "Design and Layout by Iuliia Polinovska"
-                },
-                specialThanks: "I would like to extend my gratitude to my family, friends, and fans who continue to inspire and support me through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
-            }
+            introduction: "Created in the solitude of Artifact Studio, 'No One' brings forth raw, unfiltered energy, capturing the intense isolation and introspection of the recording process. Vocals were recorded in a makeshift vocal booth — my closet — further underscoring the DIY spirit that shaped this album.",
+            credits: {
+                instrumentsAndProduction: "All Instruments, Vocals, and Production by Volodymyr Ruzhak",
+                songwriting: [{ song: "All Tracks", music: "Volodymyr Ruzhak", lyrics: "Volodymyr Ruzhak" }],
+                recordingLocation: "Recorded and Mixed at Artifact Studio",
+                mastering: "Mastered: Self-mastered"
+            },
+            artworkAndDesign: {
+                coverArt: "Album Cover Art by Iuliia Polinovska detailed illustrations that capture the haunting atmosphere of the album",
+                layoutDesign: "Design and Layout by Iuliia Polinovska"
+            },
+            specialThanks: "I would like to extend my gratitude to my family, friends, and fans who continue to inspire and support me through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
+        }
     }
 ]
 

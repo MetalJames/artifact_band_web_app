@@ -3,8 +3,16 @@ export type Song = {
     length: string;
 }
 
+export type SongWritten = {
+    song: string;
+    music: string;
+    lyrics: string;
+}
+
+
 export type Credits = {
     instrumentsAndProduction: string;
+    songwriting: SongWritten[]
     recordingLocation: string;
     mastering: string;
 }

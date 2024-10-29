@@ -45,14 +45,16 @@ const Album = () => {
                     <p className="border-l-4 pl-4 mb-4 text-gray-300">{album.albumInfo.introduction}</p>
                     <h3 className="italic mb-2">Credits:</h3>
                     <ul className="list-disc list-inside pl-4 space-y-2 text-sm md:text-base text-gray-300 mb-4">
-                        <li>{album.albumInfo.credits.instrumentsAndProduction}</li>
-                        <li>{album.albumInfo.credits.mastering}</li>
-                        <li>{album.albumInfo.credits.recordingLocation}</li>
+                        <li className="list-outside ml-5">{album.albumInfo.credits.instrumentsAndProduction}</li>
+                        <li className="list-outside ml-5">
+                            {album.albumInfo.credits.songwriting[0].song} music and lyrics written by {album.albumInfo.credits.songwriting[0].music}</li>
+                        <li className="list-outside ml-5">{album.albumInfo.credits.mastering}</li>
+                        <li className="list-outside ml-5">{album.albumInfo.credits.recordingLocation}</li>
                     </ul>
                     <h3 className="italic mb-2">Artwork & Design:</h3>
                     <ul className="list-disc list-inside pl-4 space-y-2 text-sm md:text-base text-gray-300 mb-4">
-                        <li>{album.albumInfo.artworkAndDesign.coverArt}</li>
-                        <li>{album.albumInfo.artworkAndDesign.layoutDesign}</li>
+                        <li className="list-outside ml-5">{album.albumInfo.artworkAndDesign.coverArt}</li>
+                        <li className="list-outside ml-5">{album.albumInfo.artworkAndDesign.layoutDesign}</li>
                     </ul>
                     <h3 className="italic mb-2">Special Thanks:</h3>
                     <p className="border-l-4 pl-4 mb-4 text-gray-300">{album.albumInfo.specialThanks}</p>
