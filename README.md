@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+
+
+Font Awesome - npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome

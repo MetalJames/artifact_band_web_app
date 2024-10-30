@@ -1,6 +1,7 @@
 export type Song = {
     title: string;
     length: string;
+    youtubeLink: string;
 }
 
 export type SongWritten = {

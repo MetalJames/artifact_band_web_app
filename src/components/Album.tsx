@@ -1,17 +1,16 @@
 import { useParams } from "react-router-dom";
-import { albums } from "../utils/constants";
+import { albums, singles } from "../utils/constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
+
 
 const Album = () => {
 
     const { id } = useParams();
-    const album = albums.find((album) => album.id === id);
+    const album = albums.find((album) => album.id === id) || singles.find((single) => single.id === id);
 
-
-    console.log(id)
-
-    // console.log(album);
-
-    // console.log(album.albumInfo)
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     if (!album) {
         return <p>Album not found.</p>
@@ -32,7 +31,21 @@ const Album = () => {
                         {album.songs.map((song, index) => (
                             <li key={index} className="flex justify-between mu-2">
                                 <span>{index + 1}. {song.title}</span>
-                                <span>{song.length}</span>
+                                <span>
+                                    {song.length}
+                                    {song.youtubeLink && (
+                                        <a
+                                            href={song.youtubeLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onMouseEnter={() => setHoveredIndex(index)}
+                                            onMouseLeave={() => setHoveredIndex(null)}
+                                            className="text-red-600 hover:text-red-800 transition-colors duration-200 ml-4"
+                                        >
+                                            <FontAwesomeIcon icon={faYoutube} size="lg" aria-label="YouTube link" className={hoveredIndex === index ? 'fa-beat-fade' : ''}/>
+                                        </a>
+                                    )}
+                                </span>
                             </li>
                         ))}
                     </ul>
@@ -46,8 +59,10 @@ const Album = () => {
                     <h3 className="italic mb-2">Credits:</h3>
                     <ul className="list-disc list-inside pl-4 space-y-2 text-sm md:text-base text-gray-300 mb-4">
                         <li className="list-outside ml-5">{album.albumInfo.credits.instrumentsAndProduction}</li>
-                        <li className="list-outside ml-5">
-                            {album.albumInfo.credits.songwriting[0].song} music and lyrics written by {album.albumInfo.credits.songwriting[0].music}</li>
+                        {album.albumInfo.credits.songwriting.map((credit, index) => (
+                            <li key={index} className="list-outside ml-5">
+                                {credit.song}: music wrtitten by {credit.music} {credit.lyrics !== "Instrumental" && `, and lyrics written by ${credit.lyrics}`}</li>
+                        ))}
                         <li className="list-outside ml-5">{album.albumInfo.credits.mastering}</li>
                         <li className="list-outside ml-5">{album.albumInfo.credits.recordingLocation}</li>
                     </ul>
