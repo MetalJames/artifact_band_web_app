@@ -116,3 +116,13 @@ export const singles = [
         }
     },
 ]
+
+export const bandInfo = {
+    overview: `Artifact, a Ukrainian thrash metal band founded in 2005, has journeyed through an evolving lineup and a steadfast commitment to thrash metal.\n\n
+        From early experiments in heavy and thrash metal, the band eventually solidified its sound in thrash, performing across major Ukrainian cities like Kyiv, Lviv, and Rivne.\n\n
+        In 2012, Artifact released its debut album, "Dead Silence," a raw representation of their collaborative energy, featuring tracks like "Moving to be Fast" and "Dead Silence." The album solidified their presence in the Ukrainian metal scene.\n\n
+        Following frontman Volodymyr Ruzhak's move to Canada, the band went on a long hiatus, reuniting virtually in 2020 to release the single "Silent Storm," recorded and mixed independently by Ruzhak.\n\n
+        In 2024, Ruzhak recorded Artifact's second album, "No One," a solo endeavor that captures themes of isolation and introspection. This album features 11 tracks, with each one released weekly on YouTube starting October 2024.\n\n
+        Currently, Artifact exists as a solo project led by Ruzhak, with plans to continue producing music at a pace aligned with life’s demands, dedicated to creating meaningful metal without constraints.\n\n
+        Artifact’s journey, fueled by passion and perseverance, showcases the spirit of thrash metal with a unique story of resilience and creative drive.`,
+};

@@ -1,4 +1,4 @@
-import { NavBar, Home, Footer, Music, Album } from "./components";
+import { NavBar, Home, Footer, Music, Album, Band } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Route path='' element={<Home />} />
           <Route path='/music' element={<Music />} />
           <Route path='/music/:id' element={<Album />} />
+          <Route path='/band' element={<Band />} />
         </Routes>
       </main>
       <Footer />
