@@ -64,7 +64,7 @@ export const albums = [
         songs: [
             { title: "No One", length: "5:19", youtubeLink: 'https://youtu.be/0q0XOynOhAI' },
             { title: "Lies We Live", length: "2:56", youtubeLink: 'https://youtu.be/BjU7v8ncsds' },
-            { title: "No Creation", length: "4:51", youtubeLink: '' },
+            { title: "No Creation", length: "4:51", youtubeLink: 'https://youtu.be/w2aY8XpdBbU' },
             { title: "Dictator's Game", length: "3:07", youtubeLink: '' },
             { title: "Who Am I", length: "5:29", youtubeLink: '' },
             { title: "Drowning in Denial", length: "4:59", youtubeLink: '' },

@@ -1,15 +1,16 @@
-import { NoOneIMG } from "../assets";
+import { Artifact, NoOneIMG } from "../assets";
 import { albums } from "../utils/constants";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const featuredAlbum = albums.find((album) => album.id === "no_one")!; // It never going to be undefined
 
     return (
         <div className="flex flex-col items-center p-8">
-            <p>metal-textured background to give it that gritty, heavy feel for entire page</p>
-            <p>add a subtle animation (like a pulsing glow or slow zoom) to give it a dynamic feel. <span className="text-3xl">Maybe Add?</span>Maybe???</p>
-            <h1 className="text-5xl">HERE I WILL HAVE ARTIFACT NAME WHEN IT WILL BE READY</h1>
+            {/* <p>metal-textured background to give it that gritty, heavy feel for entire page</p> */}
+            {/* <p>add a subtle animation (like a pulsing glow or slow zoom) to give it a dynamic feel. <span className="text-3xl">Maybe Add?</span>Maybe???</p> */}
+            {/* <h1 className="text-5xl">HERE I WILL HAVE ARTIFACT NAME WHEN IT WILL BE READY</h1> */}
+            {/* <img src={Artifact} alt="Artifact" className="w-[2000px] h-[100px]" /> */}
             <h3 className="text-3xl">NEW RELEASE</h3>
             <p className="text-xl italic">"No One - Out Now. Embrace the Silence."</p>
             {/* Album Cover Section */}
@@ -28,6 +29,7 @@ const Hero = () => {
                 <h2 className="text-2xl font-bold mb-4">Featured Tracks from "No One"</h2>
                 <div className="divider mb-4 w-full h-1 bg-gray-800" /> {/* Grungy divider */}
             </div>
+            <img src={Artifact} alt="Artifact" className="w-7/12" />
         </div>
     );
 }
