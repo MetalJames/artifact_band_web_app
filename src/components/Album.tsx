@@ -17,13 +17,17 @@ const Album = () => {
     }
 
     return (
-        <div className="flex flex-col w-[60%] m-auto">
+        <div className="flex flex-col w-[60%] m-auto py-10">
             {/* Album Cover and Tracklist Section */}
+            <div className="text-center pb-10">
+                <p>Released in {album.year}</p>
+                <p>{album.title}</p>
+            </div>
             <div className="flex">
                 <div className="w-8/12">
                     {/* <h1 className="text-3xl text-bold">{album.title}</h1>
                     <p className="text-lg">Released: {album.year} year.</p> */}
-                    <img src={album.cover} alt={album.title} className="w-9/12" />
+                    <img src={album.cover} alt={album.title} className="lg:w-9/12 w-full" />
                 </div>
                 <div className="w-4/12">
                     <h3 className="font-bold">TRACKLIST:</h3>

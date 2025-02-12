@@ -124,3 +124,18 @@ export const bandInfo = {
     overviewFour: "By 2022, with newfound independence, Volodymyr began working on new material, culminating in the 2024 album No One. The album was a deeply introspective work, fully recorded, mixed, and mastered by Volodymyr himself. Released on YouTube as a weekly song drop, No One comprises 11 tracks that delve into themes of isolation, identity, and self-reflection. Volodymyr recorded the vocals in a makeshift studio setup, capturing the raw essence of the DIY spirit that characterizes Artifact’s recent work. The album cover, by Iuliia Polinovska, artistically conveys the album's haunting and introspective mood.",
     overviewFive: "Despite the logistical challenges and the demands of real life, Artifact continues to create new music. Though currently a solo endeavor, Volodymyr remains committed to Artifact's evolution, embodying its essence through his solo recordings, with gratitude extended to friends, family, and fans who support the journey."
 };
+
+export const shortAbout = {
+    title: "ARTIFACT",
+    description: "Artifact is a Ukrainian thrash metal band founded in November 2005 in Lviv. Originally a full band, it is now a solo project led by Volodymyr Ruzhak, who writes, records, and produces all music. \nOver time, the band evolved from classic thrash and heavy metal into its own unique sound—Artifact Metal—blending raw thrash energy with groove-heavy elements and drop D tuning. \nThe band has released two full albums, Dead Silence (2012) and No One (2024), along with the instrumental single Silent Storm (2020).",
+    announcement: "2025 marks Artifact’s 20th anniversary, and to celebrate, a remastered edition of 'Dead Silence' will be released.",
+    statement: "The music is not just meant to be heard but to be felt!",
+    members: {
+        current: { name: "Volodymyr Ruzhak", role: "Vocal, Guitar, Solo (formerly), Full Instrumentation & Production" },
+        past: {
+            zet: { name: "Igor Grant", role: "Drums, Backing Vocal (past member)" },
+            vidoq: { name: "Viktor Matushek", role: "Bass, Backing Vocal (past member)" },
+        }
+    },
+    callToAction: "Read more about Artifact"
+};
