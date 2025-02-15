@@ -17,7 +17,7 @@ const Album = () => {
     }
 
     return (
-        <div className="flex flex-col w-[60%] m-auto py-10">
+        <div className="flex flex-col w-[60%] m-auto py-10 pt-20">
             {/* Album Cover and Tracklist Section */}
             <div className="text-center pb-10">
                 <p>Released in {album.year}</p>
@@ -59,14 +59,25 @@ const Album = () => {
             {album.albumInfo && (
                 <div className="w-6/12 mt-[4vw] m-auto">
                     <h3 className="font-bold mb-2">"{album.title}"(Album, {album.year})</h3>
-                    <p className="border-l-4 pl-4 mb-4 text-gray-300">{album.albumInfo.introduction}</p>
+                    <p className="border-l-4 pl-4 mb-4 text-gray-300 whitespace-pre-line">{album.albumInfo.introduction}</p>
                     <h3 className="italic mb-2">Credits:</h3>
                     <ul className="list-disc list-inside pl-4 space-y-2 text-sm md:text-base text-gray-300 mb-4">
-                        <li className="list-outside ml-5">{album.albumInfo.credits.instrumentsAndProduction}</li>
-                        {album.albumInfo.credits.songwriting.map((credit, index) => (
+                        {album.albumInfo.credits.members.map((member, index) => (
                             <li key={index} className="list-outside ml-5">
-                                {credit.song}: music wrtitten by {credit.music} {credit.lyrics !== "Instrumental" && `, and lyrics written by ${credit.lyrics}`}</li>
+                                <strong>{member.instrument}</strong> {member.member}
+                            </li>
                         ))}
+                    <li className="list-outside ml-5">
+                        <strong>Songwriting:</strong>
+                        <ul className="list-disc pl-6 mt-2">
+                            {album.albumInfo.credits.songwriting.map((credit, index) => (
+                                <li key={index} className="list-outside ml-5">
+                                    {credit.song}: music written by {credit.music} 
+                                    {credit.lyrics !== "Instrumental" && `, and lyrics written by ${credit.lyrics}`}
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
                         <li className="list-outside ml-5">{album.albumInfo.credits.mastering}</li>
                         <li className="list-outside ml-5">{album.albumInfo.credits.recordingLocation}</li>
                     </ul>

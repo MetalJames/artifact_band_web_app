@@ -3,7 +3,7 @@ import { bandInfo } from "../utils/constants"
 
 const Band = () => {
     return (
-        <div className="flex flex-col items-center w-6/12 m-auto py-10">
+        <div className="flex flex-col items-center w-6/12 m-auto py-10 pt-20">
             {/* <h1 className="text-5xl font-bold">ARTIFACT</h1><br/> */}
             <img src={Artifact} alt="Artifact" className="w-5/12 h-[170px] mb-4" />
             <p>{bandInfo.earlyYearsAndLineup}</p>< br/>

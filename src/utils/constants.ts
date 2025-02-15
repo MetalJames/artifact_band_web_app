@@ -38,20 +38,25 @@ export const albums = [
             { title: "Outro", length: "1:27", youtubeLink: "https://youtu.be/-m6U27BT6qk" }
         ],
         albumInfo: {
-            introduction: "Recorded in Artifact Studio, Dead Silence captures the raw, collective spirit of our band’s journey. Originally a four-member group, the album became a trio after one guitarist departed during recording. With Volodymyr Ruzhak on lead vocals, solo, and rhythm guitar, Igor Grant on drums, and Viktor Matushek on bass, each member contributed to the songwriting process and taking a part of backing vocals, adding depth and texture to each track.",
+            introduction: "Recorded in Artifact Studio, Dead Silence captures the raw, collective spirit of our band’s journey. Originally a four-member group, the album became a trio after one guitarist departed during recording. Each member brought their own energy—Volodymyr Ruzhak on vocals and guitar, Igor Grant on drums, and Viktor Matushek on bass—contributing both musically and vocally to shape the album’s intense, layered sound.",
             credits: {
-                instrumentsAndProduction: "Volodymyr Ruzhak on Vocals, Guitar, and Solo; Drums performed by Igor Grant; Bass by Viktor Matushek. Backing Vocals also by Igor Grant and Viktor Matushek.",
+                // instrumentsAndProduction: "Volodymyr Ruzhak on Vocals, Guitar, and Solo; Drums performed by Igor Grant; Bass by Viktor Matushek. Backing Vocals also by Igor Grant and Viktor Matushek.",
+                members: [
+                    { instrument: "Vocals, Guitar, and Solo:", member: " Volodymyr Ruzhak" },
+                    { instrument: "Drums & Backing Vocals:", member: " Igor Grant" },
+                    { instrument: "Bass & Backing Vocals:", member: " Viktor Matushek" }
+                ],
                 songwriting: [
                     { song: "Moving to be Fast", music: "Roman Yarema", lyrics: "Volodymyr Ruzhak" },
                     { song: "Town of Dreams", music: "Band collaboration", lyrics: "Viktor Matushek" },
                     { song: "All Other Tracks", music: "Band collaboration", lyrics: "Volodymyr Ruzhak, with contributions from the band" }
                 ],
-                recordingLocation: "Recorded at Artifact Studio",
-                mastering: "Mastered by Volodymyr Ruzhak"
+                recordingLocation: "Recorded at: Artifact Studio",
+                mastering: "Mastered by: Volodymyr Ruzhak"
             },
             artworkAndDesign: {
-                coverArt: "Album Cover Art by Iuliia Polinovska. The cover features a dark and empty 'Town of Dreams'—a cityscape in stark black and white lines, with a blurred, haunting Artifact logo, symbolizing the ‘dead silence’ that permeates the album.",
-                layoutDesign: "Design and Layout by Iuliia Polinovska"
+                coverArt: "Album cover art by Iuliia Polinovska visually embodies the album’s haunting themes by merging two concepts—Town of Dreams and Dead Silence. The artwork depicts a stark 2D cityscape, a dense skyline outlined in thin white lines against a dark background. It reflects a metropolis where people exist but do not truly live, trapped in routine and silence, mirroring the album’s themes of emptiness and detachment.",
+                layoutDesign: "Cover Art & Layout Design: Iuliia Polinovska"
             },
             specialThanks: "We would like to extend our gratitude to our families, friends, and fans who continue to inspire and support us through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
         }
@@ -75,16 +80,22 @@ export const albums = [
             { title: "Farewell (Outro Instrumental)", length: "2:23", youtubeLink: '' },
         ],
         albumInfo: {
-            introduction: "Recorded in Artifact Studio, 'No One' brings forth raw, unfiltered energy, capturing the intense isolation and introspection of the recording process. Vocals were recorded in a makeshift vocal booth — my closet — further underscoring the DIY spirit that shaped this album.",
+            introduction: "Recorded at Artifact Studio, No One represents a turning point in Artifact’s journey. After establishing a raw thrash metal foundation with Dead Silence (2012), this album fully shapes the band's signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. Unlike its predecessor, No One explores deeper themes of isolation, resilience, and self-reflection, both musically and lyrically. The recording process remained true to Artifact’s independent roots, with vocals captured in a makeshift studio, reinforcing the raw and personal nature of the album. \n\nThis album is also a testament to time and persistence—two of its tracks, No One and Lies We Live, were first first brought to life in 2012 with original members Igor Grant and Viktor Matushek. Over the years, new ideas emerged, with songs written across more than a decade—from 2015 to 2020—before the final compositions, Who Am I and Drowning in Denial, were created in 2023, bringing the album full circle.",
             credits: {
-                instrumentsAndProduction: "All Instruments, Vocals, and Production by Volodymyr Ruzhak",
-                songwriting: [{ song: "All Tracks", music: "Volodymyr Ruzhak", lyrics: "Volodymyr Ruzhak" }],
+                // instrumentsAndProduction: "All Instruments, Vocals, and Production by Volodymyr Ruzhak",
+                members: [
+                    { instrument: "All Instruments, Vocals, and Production", member: "Volodymyr Ruzhak" }
+                ],
+                songwriting: [
+                    { song: "No One & Lies We Live", music: "Volodymyr Ruzhak, Igor Grant, and Viktor Matushek", lyrics: "Volodymyr Ruzhak" },
+                    { song: "All Other Tracks", music: "Volodymyr Ruzhak", lyrics: "Volodymyr Ruzhak" }
+                ],
                 recordingLocation: "Recorded and Mixed at Artifact Studio",
                 mastering: "Mastered: Self-mastered"
             },
             artworkAndDesign: {
-                coverArt: "Album Cover Art by Iuliia Polinovska detailed illustrations that capture the haunting atmosphere of the album",
-                layoutDesign: "Design and Layout by Iuliia Polinovska"
+                coverArt: "Album cover art by Iuliia Polinovska transforms the album’s themes into a striking visual. A lone figure stands in a desolate world—a representation of isolation and resilience—while a path replaces their face, symbolizing the unknown journey ahead. The artwork reflects the album’s introspective nature, where destruction and hope exist side by side, mirroring the raw emotion embedded in every track.",
+                layoutDesign: "Cover Art & Layout Design: Iuliia Polinovska"
             },
             specialThanks: "I would like to extend my gratitude to my family, friends, and fans who continue to inspire and support me through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
         }
@@ -101,16 +112,19 @@ export const singles = [
             { title: "Silent Storm", length: "3:28", youtubeLink: 'https://youtu.be/Q4mG85fgQzM' },
         ],
         albumInfo: {
-            introduction: "Recorded in Artifact Studio, 'Silent Storm' captures a profound sense of stillness and reflection, uniquely brought to life as an instrumental piece. The track was made to convey the peaceful beauty of calmness.",
+            introduction: "Recorded at Artifact Studio, Silent Storm marked Artifact’s return after years of silence. Composed, recorded, and produced solely by Volodymyr Ruzhak at home, the instrumental track carries a sense of uncertainty and transition, evolving from serenity into intensity.",
             credits: {
-                instrumentsAndProduction: "All Instruments and Production by Volodymyr Ruzhak",
+                // instrumentsAndProduction: "All Instruments and Production by Volodymyr Ruzhak",
+                members: [
+                    { instrument: "All Instruments and Production", member: "Volodymyr Ruzhak" }
+                ],
                 songwriting: [{ song: "Silent Storm", music: "Volodymyr Ruzhak", lyrics: "Instrumental" }],
                 recordingLocation: "Recorded and Mixed at Artifact Studio",
                 mastering: "Mastered: Self-mastered"
             },
             artworkAndDesign: {
-                coverArt: "Cover Art by Iuliia Polinovska. The illustration evokes a serene, silent scene with two figures gazing at a meteor shower, illuminated by a grand moon on the horizon.",
-                layoutDesign: "Design and Layout by Iuliia Polinovska"
+                coverArt: "The cover art, created by Iuliia Polinovska, visually mirrors this journey—portraying two figures standing beneath a vast sky, watching stars fall under the glow of an immense moon. The imagery and music together encapsulate a shift from stillness to movement, capturing the emotions of a storm both external and internal.",
+                layoutDesign: "Cover Art & Layout Design: Iuliia Polinovska"
             },
             specialThanks: "Special thanks to Iuliia Polinovska for her incredible support and artistic contribution, bringing this instrumental single to life through her beautiful cover artwork."
         }
@@ -136,7 +150,7 @@ export const bandInfo = {
 export const shortAbout = {
     title: "ARTIFACT",
     // description: "Artifact is a Ukrainian thrash metal band founded in November 2005 in Lviv, Ukraine. The early days were filled with relentless practice, experimenting with sound, and finding the right balance. Through years of dedication, Artifact grew into a band that could proudly say—it was worth every step. \n\nOver time, the band evolved from blending heavy and thrash metal into a modernized, high-energy sound—Artifact Metal—fusing raw thrash intensity with groove-driven elements and drop D tuning. \n\nBy 2010, the band released its first demo, a milestone shaped by the dedication and musicianship of its core trio—Volodymyr Ruzhak (vocals, guitar, solo), Igor Grant (drums, backing vocals), and Viktor Matushek (bass, backing vocals). Each member brought their own energy and vision to the project, solidifying the foundation of what Artifact would become. \n\nThe band has released two full albums, Dead Silence (2012) and No One (2024), along with the instrumental single Silent Storm (2020).",
-    description: "Artifact is a Ukrainian thrash metal band founded in November 2005 in Lviv, Ukraine. The early days were filled with relentless practice, experimenting with sound, and finding the right balance. Through years of dedication, Artifact grew into a band that could proudly say—it was worth every step. \n\nOver time, the band forged its own signature sound—Artifact Metal—blending raw thrash intensity with groove-driven elements and drop D tuning. \n\nArtifact has released two full albums, Dead Silence (2012) and No One (2024), along with the instrumental single Silent Storm (2020).",
+    description: "Artifact is a Ukrainian thrash metal band founded in November 2005 in Lviv, Ukraine. The early days of Artifact were filled with relentless practice, experimenting with sound, and finding the right balance—first building a raw thrash metal foundation, Dead Silence(2012), before evolving further in the second album, No One (2024), where Artifact fully shaped its signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. \n\nArtifact has released two full albums, Dead Silence (2012) and No One (2024), along with the instrumental single Silent Storm (2020).",
 
     
     

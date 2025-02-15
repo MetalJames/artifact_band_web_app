@@ -4,8 +4,7 @@ import { ArtifactLogo } from "../assets";
 
 const NavBar = () => {
     return (
-        <nav className="w-full bg-black bg-opacity-30">
-            <div className="w-[80%] max-w-6xl mx-auto flex justify-between items-center py-4">
+        <nav className="absolute top-0 left-0 w-full flex justify-between px-6 py-4 bg-black bg-opacity-30 z-50">
                 {/* Logo + Band Name */}
                 <Link to={"/"} className="flex items-center gap-6">
                     <img src={ArtifactLogo} alt="Artifact Band Logo" className="w-10" />
@@ -24,7 +23,6 @@ const NavBar = () => {
                         </Link>
                     ))}
                 </div>
-            </div>
         </nav>
     );
 };
