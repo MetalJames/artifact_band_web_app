@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../utils/constants";
 import { ArtifactLogo } from "../assets";
 
-const NavBar = () => {
+export const NavBar = () => {
     return (
         <nav className="absolute top-0 left-0 w-full flex justify-between px-6 py-4 bg-black bg-opacity-30 z-50">
                 {/* Logo + Band Name */}
@@ -26,5 +26,3 @@ const NavBar = () => {
         </nav>
     );
 };
-
-export default NavBar;

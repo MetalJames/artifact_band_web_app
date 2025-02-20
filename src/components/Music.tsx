@@ -3,7 +3,7 @@ import { albums, singles } from "../utils/constants";
 
 console.log(albums)
 
-const Music = () => {
+export const Music = () => {
     return (
         <div className="flex justify-center pt-20">
             <div className="flex flex-col w-[60vw]">
@@ -38,6 +38,4 @@ const Music = () => {
             </div>
         </div>
     )
-}
-
-export default Music
+};

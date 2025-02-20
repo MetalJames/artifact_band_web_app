@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
-
-const Album = () => {
+export const Album = () => {
 
     const { id } = useParams();
     const album = albums.find((album) => album.id === id) || singles.find((single) => single.id === id);
@@ -92,6 +91,4 @@ const Album = () => {
             )}
         </div>
     )
-}
-
-export default Album
+};

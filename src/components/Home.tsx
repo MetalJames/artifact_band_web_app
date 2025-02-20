@@ -1,7 +1,7 @@
 import { Hero } from "./Hero"
 import { ShortAboutHome } from "./ShortAboutHome"
 
-const Home = () => {
+export const Home = () => {
     return (
         <div>
             <div>
@@ -10,6 +10,4 @@ const Home = () => {
             </div>
         </div>
     )
-}
-
-export default Home
+};

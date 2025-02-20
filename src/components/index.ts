@@ -1,6 +1,6 @@
-export { default as NavBar } from "./NavBar";
-export { default as Home } from "./Home";
-export { default as Music } from "./Music";
-export { default as Band } from "./Band";
-export { default as Album } from "./Album";
-export { default as Footer } from "./Footer";
+export { NavBar } from "./NavBar";
+export { Home } from "./Home";
+export { Music } from "./Music";
+export { Band } from "./Band";
+export { Album } from "./Album";
+export { Footer } from "./Footer";
