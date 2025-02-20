@@ -1,10 +1,10 @@
 import { DeadSilence, NoOneIMG, SilentStorm } from "../assets"
 import { artifact_2007_live, artifact_2010_band, artifact_2011_band, artifact_beginning, artifact_last_live, demo_cover_2010, demo_recording_2010, ds_album, express_paper, original_3 } from "../assets/img";
-import { bandInfo } from "../utils/constants"
+import { bandInfo } from "../utils";
 
 export const Band = () => {
     return (
-        <div className="flex flex-col items-center w-6/12 m-auto py-10 pt-20">
+        <div className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-4/5 xl:w-4/5 2xl:w-1/2 flex flex-col items-center m-auto py-10 pt-20">
             {/* <h1 className="text-5xl font-bold">ARTIFACT</h1><br/> */}
             {/* <img src={Artifact} alt="Artifact" className="w-5/12 h-[170px] mb-4" /> */}
             <div className="relative py-6">
@@ -17,13 +17,10 @@ export const Band = () => {
             </div>
 
 
-
-            <div className="flex py-4">
-                {/* Band Info Section */}
-                <p className="pr-4 w-3/5">{bandInfo.earlyYearsAndLineup}</p>
-
+            <h2>{bandInfo.origins}</h2>
+            <div className="py-6">
                 {/* Image Section */}
-                <div className="flex flex-col w-2/5 border rounded-md bg-gray-600 bg-opacity-30 p-4">
+                <div className="flex flex-col w-2/5 float-right border rounded-md bg-gray-600 bg-opacity-30 p-4 ml-4">
                     <div className="flex justify-around items-center gap-4">
                         <img src={original_3} alt="Main artifact trio" className="w-1/2 h-40 object-cover rounded-lg shadow-md"/>
                         <img src={artifact_beginning} alt="Artifact Beginning" className="w-1/3 h-40 object-cover rounded-lg shadow-md"/>
@@ -33,6 +30,8 @@ export const Band = () => {
                         Rehearsal stuff in their rehearsal studio.
                     </p>
                 </div>
+                {/* Band Info Section */}
+                <p className="whitespace-pre-line">{bandInfo.earlyYearsAndLineup}</p>
             </div>
 
 
@@ -63,7 +62,7 @@ export const Band = () => {
 
 
 
-
+<h2>{bandInfo.firstPerformance}</h2>
 <div className="flex py-4">
     {/* Image Section (Moved to the Left) */}
     <div className="flex flex-col w-2/5 border rounded-md bg-gray-600 bg-opacity-30 p-4">
@@ -78,7 +77,7 @@ export const Band = () => {
     </div>
 
     {/* Text Section (Moved to the Right) */}
-    <p className="pl-4 w-3/5">{bandInfo.livePerformancesAndRecognition}</p>
+    <p className="pl-4 w-3/5 whitespace-pre-line">{bandInfo.livePerformancesAndRecognition}</p>
 </div>
 
 
@@ -95,9 +94,9 @@ export const Band = () => {
 
 
 
-
+<h2>{bandInfo.firstDemo}</h2>
 <div className="flex py-4">
-    <p className="pr-4 w-3/5">{bandInfo.demosAndTransitionToEnglish}</p>
+    <p className="pr-4 w-3/5 whitespace-pre-line">{bandInfo.demosAndTransitionToEnglish}</p>
     <div className="w-2/5 pr-4 border rounded-md bg-gray-600 bg-opacity-30 p-4">
         <img src={demo_cover_2010} alt="Artifact 2010 Demo Album" className="w-3/4 h-40 object-cover rounded-lg shadow-md mx-auto"/>
         <p className="text-sm mt-2 border-t pt-2">
@@ -165,11 +164,11 @@ export const Band = () => {
             </div> */}
 
 
-
+<h2>{bandInfo.recordingReleaseDS}</h2>
 <div className="flex py-4">
     {/* Text Section (Left) */}
     <div className="w-3/5 pr-4">
-        <p className="whitespace-pre-line">{bandInfo.overviewTwo}</p>
+        <p className="whitespace-pre-line">{bandInfo.deadSilenceAlbum}</p>
     </div>
 
     {/* Image Section (Right) */}
@@ -191,27 +190,29 @@ export const Band = () => {
             </div>
             
             
-            
+            <h2>{bandInfo.recordingReleaseSS}</h2>
             <div className="py-6">
                 <div className="w-2/5 flex flex-col float-left border rounded-md bg-gray-600 bg-opacity-30 p-4 mr-4">
                     <img src={SilentStorm} alt="Silent Storm"  className="w-full object-cover rounded-lg"/>
                     <p className="text-sm mt-2 border-t pt-2 text-center">Official Cover art for Silente Storm Single</p>
                 </div>
                 <div>
-                    <p className="whitespace-pre-line">{bandInfo.overviewTree}</p><br/>
+                    <p className="whitespace-pre-line">{bandInfo.silentStormAndComback}</p><br/>
                 </div>
             </div>
 
             <p className="py-4">{bandInfo.evolutionIntoArtifactMetal}</p>
 
+            <h2>{bandInfo.recordingReleaseNO}</h2>
             <div className="py-6">
                 <div className="w-2/5 flex flex-col float-right border rounded-md bg-gray-600 bg-opacity-30 p-4 ml-4">
                     <img src={NoOneIMG} alt="No One"  className="w-full object-cover rounded-lg"/>
                     <p className="text-sm mt-2 border-t pt-2 text-center">Official Cover art for No One</p>
                 </div>
-                <p className="whitespace-pre-line">{bandInfo.overviewFour}</p><br/>
+                <p className="whitespace-pre-line">{bandInfo.noOneAndNewSound}</p><br/>
             </div>
-            <p>{bandInfo.overviewFive}</p>
+            <h2>{bandInfo.futureOfArtifact}</h2>
+            <p>{bandInfo.whatIsNext}</p>
         </div>
     )
 };

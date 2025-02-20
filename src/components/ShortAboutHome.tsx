@@ -1,4 +1,4 @@
-import { shortAbout } from "../utils/constants";
+import { shortAbout } from "../utils/";
 import { Link } from "react-router-dom";
 
 export const ShortAboutHome = () => {

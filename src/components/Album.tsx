@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { albums, singles } from "../utils/constants";
+import { albums, singles } from "../utils/";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";

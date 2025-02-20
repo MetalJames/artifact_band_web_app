@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { albums, singles } from "../utils/constants";
+import { albums, singles } from "../utils/";
 
 console.log(albums)
 

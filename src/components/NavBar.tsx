@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { navLinks } from "../utils/constants";
+import { navLinks } from "../utils/";
 import { ArtifactLogo } from "../assets";
 
 export const NavBar = () => {
