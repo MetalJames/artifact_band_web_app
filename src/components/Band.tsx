@@ -1,5 +1,3 @@
-import { DeadSilence, NoOneIMG, SilentStorm } from "../assets"
-import { artifact_2007_live, artifact_2010_band, artifact_2011_band, artifact_last_live, demo_cover_2010, demo_recording_2010, ds_album, express_paper } from "../assets/img";
 import { bandInfo } from "../utils";
 
 export const Band = () => {
@@ -25,7 +23,7 @@ export const Band = () => {
                         <img src={bandInfo.theBeginning.images.imageTwo.src} alt={bandInfo.theBeginning.images.imageTwo.alt} className="w-1/3 h-40 object-cover rounded-lg shadow-md"/>
                     </div>
                     <p className="text-sm mt-2 border-t pt-2">
-                        {bandInfo.theBeginning.captions.text} 
+                        {bandInfo.theBeginning.captions.text}{" "}
                         <strong>{bandInfo.theBeginning.captions.boldNames}</strong>
                         {bandInfo.theBeginning.captions.readDirection}<br/>
                         {bandInfo.theBeginning.captions.breakLineText}
@@ -62,22 +60,29 @@ export const Band = () => {
 
 
 
-<h2>{bandInfo.firstPerformance}</h2>
+<h2>{bandInfo.livePerformancesAndRecognition.title}</h2>
 <div className="flex py-4">
     {/* Image Section (Moved to the Left) */}
     <div className="flex flex-col w-2/5 border rounded-md bg-gray-600 bg-opacity-30 p-4">
         <div className="flex justify-around items-center gap-4">
-            <img src={artifact_2007_live} alt="Artifact first Live event" className="w-1/2 h-40 object-cover rounded-lg shadow-md"/>
-            <img src={express_paper} alt="Article about Artifact in the magazine" className="w-1/3 h-40 object-cover rounded-lg shadow-md"/>
+            <img src={bandInfo.livePerformancesAndRecognition.images.imageOne.src} alt={bandInfo.livePerformancesAndRecognition.images.imageOne.alt} className="w-1/2 h-40 object-cover rounded-lg shadow-md"/>
+            <img src={bandInfo.livePerformancesAndRecognition.images.imageTwo.src} alt={bandInfo.livePerformancesAndRecognition.images.imageTwo.alt} className="w-1/3 h-40 object-cover rounded-lg shadow-md"/>
         </div>
-        <p className="text-sm mt-2 border-t pt-2">
+        {/* <p className="text-sm mt-2 border-t pt-2">
             Artifact's first live performance at <strong>Trusha College</strong> in Lviv, Ukraine. <br/>
             Featured in a magazine article recognizing the band's early impact.
+        </p> */}
+
+        <p className="text-sm mt-2 border-t pt-2">
+            {bandInfo.livePerformancesAndRecognition.captions.introText}{" "}
+            <strong>{bandInfo.livePerformancesAndRecognition.captions.collegeName}</strong>
+            {bandInfo.livePerformancesAndRecognition.captions.locationName}<br/>
+            {bandInfo.livePerformancesAndRecognition.captions.magazineArticle}
         </p>
     </div>
 
     {/* Text Section (Moved to the Right) */}
-    <p className="pl-4 w-3/5 whitespace-pre-line">{bandInfo.livePerformancesAndRecognition}</p>
+    <p className="pl-4 w-3/5 whitespace-pre-line">{bandInfo.livePerformancesAndRecognition.liveEventExpressArticle}</p>
 </div>
 
 
@@ -94,13 +99,13 @@ export const Band = () => {
 
 
 
-<h2>{bandInfo.firstDemo}</h2>
+<h2>{bandInfo.firstDemo.title}</h2>
 <div className="flex py-4">
-    <p className="pr-4 w-3/5 whitespace-pre-line">{bandInfo.demosAndTransitionToEnglish}</p>
+    <p className="pr-4 w-3/5 whitespace-pre-line">{bandInfo.firstDemo.demosAndTransitionToEnglish}</p>
     <div className="w-2/5 pr-4 border rounded-md bg-gray-600 bg-opacity-30 p-4">
-        <img src={demo_cover_2010} alt="Artifact 2010 Demo Album" className="w-3/4 h-40 object-cover rounded-lg shadow-md mx-auto"/>
+        <img src={bandInfo.firstDemo.images.imageOne.src} alt={bandInfo.firstDemo.images.imageOne.alt} className="w-3/4 h-40 object-cover rounded-lg shadow-md mx-auto"/>
         <p className="text-sm mt-2 border-t pt-2">
-            Artifact's 2010 demo album, showcasing the band's evolving sound and transition to English lyrics.
+            {bandInfo.firstDemo.captions.demoCoverArt}
         </p>
     </div>
 </div>
@@ -125,20 +130,32 @@ export const Band = () => {
 
 
 
+<div>
+    <h2>{bandInfo.artifactLineup2009_2010.title}</h2>
+    <p>{bandInfo.artifactLineup2009_2010.description}</p>
+    <div className="flex flex-col py-6 w-full border rounded-md bg-gray-600 bg-opacity-30 p-4">
+        {/* Image Section */}
+        <div className="flex justify-around items-center gap-4">
+            <img src={bandInfo.artifactLineup2009_2010.images.imageOne.src} alt={bandInfo.artifactLineup2009_2010.images.imageOne.alt} className="w-1/4 h-48 object-cover rounded-lg shadow-md border"/>
+            <img src={bandInfo.artifactLineup2009_2010.images.imageTwo.src} alt={bandInfo.artifactLineup2009_2010.images.imageTwo.alt} className="w-1/3 h-48 object-fit rounded-lg shadow-md border"/>
+            <img src={bandInfo.artifactLineup2009_2010.images.imageThree.src} alt={bandInfo.artifactLineup2009_2010.images.imageThree.alt} className="w-1/4 h-48 object-cover rounded-lg shadow-md border"/>
+        </div>
 
-<div className="flex flex-col py-6 w-full border rounded-md bg-gray-600 bg-opacity-30 p-4">
-    {/* Image Section */}
-    <div className="flex justify-around items-center gap-4">
-        <img src={artifact_2010_band} alt="Artifact 2010 Band" className="w-1/4 h-48 object-cover rounded-lg shadow-md border"/>
-        <img src={demo_recording_2010} alt="Artifact 2010 Band Recording" className="w-1/3 h-48 object-fit rounded-lg shadow-md border"/>
-        <img src={artifact_2011_band} alt="Artifact 2011 Band" className="w-1/4 h-48 object-cover rounded-lg shadow-md border"/>
+        {/* Text Section */}
+        <p className="text-sm mt-2 border-t pt-2">
+            {bandInfo.artifactLineup2009_2010.captions.bandPhotoText}
+            <strong>{bandInfo.artifactLineup2009_2010.captions.bandPhotoNames}</strong>
+            {bandInfo.artifactLineup2009_2010.captions.bandPhotoReadDirection}<br />
+            {bandInfo.artifactLineup2009_2010.captions.demoRecordingText}
+            <strong>{bandInfo.artifactLineup2009_2010.captions.demoRecordingNames}</strong>
+            {bandInfo.artifactLineup2009_2010.captions.demoRecordingReadDirection}<br/>
+            {bandInfo.artifactLineup2009_2010.captions.livePerformanceText}
+            <strong>{bandInfo.artifactLineup2009_2010.captions.livePerformanceNames}</strong>
+            {bandInfo.artifactLineup2009_2010.captions.livePerformanceText}
+            {/* Artifact recorded their 2010 demo album with band members Vadim Boitsov, Volodymyr Ruzhak, Viktor Matushek, and Igor Grant (from left to right).
+            The band performed live at a **thrash metal festival competition in Kyiv**, where they secured **3rd place**. */}
+        </p>
     </div>
-
-    {/* Text Section */}
-    <p className="text-sm mt-2 border-t pt-2">
-        Artifact recorded their 2010 demo album with band members Vadim Boitsov, Volodymyr Ruzhak, Viktor Matushek, and Igor Grant (from left to right).
-        The band performed live at a **thrash metal festival competition in Kyiv**, where they secured **3rd place**.
-    </p>
 </div>
 
 
@@ -164,55 +181,56 @@ export const Band = () => {
             </div> */}
 
 
-<h2>{bandInfo.recordingReleaseDS}</h2>
+<h2>{bandInfo.deadSilenceAlbum.title}</h2>
 <div className="flex py-4">
     {/* Text Section (Left) */}
     <div className="w-3/5 pr-4">
-        <p className="whitespace-pre-line">{bandInfo.deadSilenceAlbum}</p>
+        <p className="whitespace-pre-line">{bandInfo.deadSilenceAlbum.description}</p>
     </div>
 
     {/* Image Section (Right) */}
     <div className="w-2/5 flex flex-col border rounded-md bg-gray-600 bg-opacity-30 p-4">
         <div className="flex flex-col gap-4 items-center">
-            <img src={ds_album} alt="Artifact - Dead Silence CD" className="w-3/4 h-40 object-cover rounded-lg"/>
-            <img src={DeadSilence} alt="Dead Silence Cover Art" className="w-3/4 h-40 object-cover rounded-lg"/>
+            <img src={bandInfo.deadSilenceAlbum.images.imageOne.src} alt={bandInfo.deadSilenceAlbum.images.imageOne.alt} className="w-3/4 h-40 object-cover rounded-lg"/>
+            <img src={bandInfo.deadSilenceAlbum.images.imageTwo.src} alt={bandInfo.deadSilenceAlbum.images.imageTwo.alt} className="w-3/4 h-40 object-cover rounded-lg"/>
         </div>
         <p className="text-sm mt-2 border-t pt-2">
-            Official **CD release** of *Dead Silence*.<br/> The **Dead Silence cover art** was used for online distribution and promotional materials.
+            {bandInfo.deadSilenceAlbum.captions.officialCD}<br/>
+            {bandInfo.deadSilenceAlbum.captions.coverArt}
         </p>
     </div>
 </div>
 
 
             <div className="py-6">
-                <img src={artifact_last_live} alt="Last Artifact live event" className="w-full" />
-                <p className="text-sm mt-2 border-t pt-2 text-center">Last Artifact live performance at the Halloween Festival in Lviv, Ukraine.</p>
+                <img src={bandInfo.lastPerformance.image.src} alt={bandInfo.lastPerformance.image.alt} className="w-full" />
+                <p className="text-sm mt-2 border-t pt-2 text-center">{bandInfo.lastPerformance.caption}</p>
             </div>
             
             
-            <h2>{bandInfo.recordingReleaseSS}</h2>
+            <h2>{bandInfo.silentStormSingle.title}</h2>
             <div className="py-6">
                 <div className="w-2/5 flex flex-col float-left border rounded-md bg-gray-600 bg-opacity-30 p-4 mr-4">
-                    <img src={SilentStorm} alt="Silent Storm"  className="w-full object-cover rounded-lg"/>
-                    <p className="text-sm mt-2 border-t pt-2 text-center">Official Cover art for Silente Storm Single</p>
+                    <img src={bandInfo.silentStormSingle.images.imageOne.src} alt={bandInfo.silentStormSingle.images.imageOne.alt}  className="w-full object-cover rounded-lg"/>
+                    <p className="text-sm mt-2 border-t pt-2 text-center">{bandInfo.silentStormSingle.capptions.coverArt}</p>
                 </div>
                 <div>
-                    <p className="whitespace-pre-line">{bandInfo.silentStormAndComback}</p><br/>
+                    <p className="whitespace-pre-line">{bandInfo.silentStormSingle.description}</p><br/>
                 </div>
             </div>
 
-            <p className="py-4">{bandInfo.evolutionIntoArtifactMetal}</p>
+            <p className="py-4">{bandInfo.evolutionIntoArtifactMetal.text}</p>
 
-            <h2>{bandInfo.recordingReleaseNO}</h2>
+            <h2>{bandInfo.noOneAlbum.title}</h2>
             <div className="py-6">
                 <div className="w-2/5 flex flex-col float-right border rounded-md bg-gray-600 bg-opacity-30 p-4 ml-4">
-                    <img src={NoOneIMG} alt="No One"  className="w-full object-cover rounded-lg"/>
-                    <p className="text-sm mt-2 border-t pt-2 text-center">Official Cover art for No One</p>
+                    <img src={bandInfo.noOneAlbum.images.imageOne.src} alt={bandInfo.noOneAlbum.images.imageOne.alt}  className="w-full object-cover rounded-lg"/>
+                    <p className="text-sm mt-2 border-t pt-2 text-center">{bandInfo.noOneAlbum.captions.coverArt}</p>
                 </div>
-                <p className="whitespace-pre-line">{bandInfo.noOneAndNewSound}</p><br/>
+                <p className="whitespace-pre-line">{bandInfo.noOneAlbum.description}</p><br/>
             </div>
-            <h2>{bandInfo.futureOfArtifact}</h2>
-            <p>{bandInfo.whatIsNext}</p>
+            <h2>{bandInfo.futureOfArtifact.title}</h2>
+            <p>{bandInfo.futureOfArtifact.description}</p>
         </div>
     )
 };
