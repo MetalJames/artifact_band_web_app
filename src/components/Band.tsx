@@ -1,5 +1,5 @@
 import { DeadSilence, NoOneIMG, SilentStorm } from "../assets"
-import { artifact_2007_live, artifact_2010_band, artifact_2011_band, artifact_beginning, artifact_last_live, demo_cover_2010, demo_recording_2010, ds_album, express_paper, original_3 } from "../assets/img";
+import { artifact_2007_live, artifact_2010_band, artifact_2011_band, artifact_last_live, demo_cover_2010, demo_recording_2010, ds_album, express_paper } from "../assets/img";
 import { bandInfo } from "../utils";
 
 export const Band = () => {
@@ -17,21 +17,21 @@ export const Band = () => {
             </div>
 
 
-            <h2>{bandInfo.origins}</h2>
+            <h2>{bandInfo.theBeginning.title}</h2>
             <div className="py-6">
-                {/* Image Section */}
                 <div className="flex flex-col w-2/5 float-right border rounded-md bg-gray-600 bg-opacity-30 p-4 ml-4">
                     <div className="flex justify-around items-center gap-4">
-                        <img src={original_3} alt="Main artifact trio" className="w-1/2 h-40 object-cover rounded-lg shadow-md"/>
-                        <img src={artifact_beginning} alt="Artifact Beginning" className="w-1/3 h-40 object-cover rounded-lg shadow-md"/>
+                        <img src={bandInfo.theBeginning.images.imageOne.src} alt={bandInfo.theBeginning.images.imageOne.alt} className="w-1/2 h-40 object-cover rounded-lg shadow-md"/>
+                        <img src={bandInfo.theBeginning.images.imageTwo.src} alt={bandInfo.theBeginning.images.imageTwo.alt} className="w-1/3 h-40 object-cover rounded-lg shadow-md"/>
                     </div>
                     <p className="text-sm mt-2 border-t pt-2">
-                        Artifact founding members: <strong>Volodymyr Ruzhak, Viktor Matushek, Igor Grant</strong> (from left to right). <br/>
-                        Rehearsal stuff in their rehearsal studio.
+                        {bandInfo.theBeginning.captions.text} 
+                        <strong>{bandInfo.theBeginning.captions.boldNames}</strong>
+                        {bandInfo.theBeginning.captions.readDirection}<br/>
+                        {bandInfo.theBeginning.captions.breakLineText}
                     </p>
                 </div>
-                {/* Band Info Section */}
-                <p className="whitespace-pre-line">{bandInfo.earlyYearsAndLineup}</p>
+                <p className="whitespace-pre-line">{bandInfo.theBeginning.earlyYearsAndLineup}</p>
             </div>
 
 

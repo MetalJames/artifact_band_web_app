@@ -1,7 +1,43 @@
+import { artifact_beginning, founding_members } from "../assets/img";
+
 export const bandInfo = {
     // overviewOne: "Artifact, a Ukrainian thrash metal band founded in 2005, has journeyed through an evolving lineup and a steadfast commitment to thrash metal. Originally experimenting with heavy metal and thrash, the band eventually embraced thrash metal as their defining style, solidifying their three-member lineup with Volodymyr Ruzhak on vocals and guitar, Igor Grant on drums, and Viktor Matushek on bass. The band began performing live in 2007, extending their reach beyond local venues to major cities like Kyiv, Lviv, and Rivne. Artifact’s early work culminated in their first demo album in 2010, featuring the song “Dead Silence” and a cover of Metallica’s “Creeping Death.”",
-    origins: "Origins and Early Years (2005-2010)",
-    earlyYearsAndLineup: "Artifact, a Ukrainian thrash metal band founded in 2005, started as a four-member group with a vision of blending heavy and thrash metal into a modernized, high-energy sound. While the band initially experimented with both styles, its identity leaned toward thrash metal—though early compositions still carried elements of classic heavy metal. \n\nAt the beginning, Artifact primarily played covers of famous bands, but this was solely for practice, as they were constantly working on their own material. Some of the earliest songs written and performed were The Prophet and Native Land, both of which would later become part of Dead Silence. \n\nThe band played as a trio, a four-piece, and even attempted a five-member lineup. However, over time, one member was always falling behind, either due to a lack of commitment or a reluctance to fully get into thrash metal. \n\nThis led to the formation of Artifact’s core lineup, consisting of three dedicated members who gave their absolute best to the band: Volodymyr Ruzhak on vocals and guitar, Viktor Matushek on bass and backing vocals, and Igor Grant on drums and backing vocals. \n\nBy the time of their first live performance, they had already written a few original songs but still included some covers in their setlist. Several other songs were also performed at that concert, but the band eventually abandoned them in favor of a more distinct, Artifact-oriented sound.",
+    
+    // theBeginning: {
+    //     origins: "Origins and Early Years (2005-2010)",
+    //     earlyYearsAndLineup: "Artifact, a Ukrainian thrash metal band founded in 2005, started as a four-member group with a vision of blending heavy and thrash metal into a modernized, high-energy sound. While the band initially experimented with both styles, its identity leaned toward thrash metal—though early compositions still carried elements of classic heavy metal. \n\nAt the beginning, Artifact primarily played covers of famous bands, but this was solely for practice, as they were constantly working on their own material. Some of the earliest songs written and performed were The Prophet and Native Land, both of which would later become part of Dead Silence. \n\nThe band played as a trio, a four-piece, and even attempted a five-member lineup. However, over time, one member was always falling behind, either due to a lack of commitment or a reluctance to fully get into thrash metal. \n\nThis led to the formation of Artifact’s core lineup, consisting of three dedicated members who gave their absolute best to the band: Volodymyr Ruzhak on vocals and guitar, Viktor Matushek on bass and backing vocals, and Igor Grant on drums and backing vocals. \n\nBy the time of their first live performance, they had already written a few original songs but still included some covers in their setlist. Several other songs were also performed at that concert, but the band eventually abandoned them in favor of a more distinct, Artifact-oriented sound.",
+    //     founding_members,
+    //     artifact_beginning,
+    //     imgDescription: "Artifact founding members: <strong>Volodymyr Ruzhak, Viktor Matushek, Igor Grant</strong> (from left to right). <br/>Rehearsal stuff in their rehearsal studio."
+    // },
+
+
+
+
+    theBeginning: {
+        title: "Origins and Early Years (2005-2010)",
+        earlyYearsAndLineup: "Artifact, a Ukrainian thrash metal band founded in 2005, started as a four-member group with a vision of blending heavy and thrash metal into a modernized, high-energy sound. While the band initially experimented with both styles, its identity leaned toward thrash metal—though early compositions still carried elements of classic heavy metal. \n\nAt the beginning, Artifact primarily played covers of famous bands, but this was solely for practice, as they were constantly working on their own material. Some of the earliest songs written and performed were The Prophet and Native Land, both of which would later become part of Dead Silence. \n\nThe band played as a trio, a four-piece, and even attempted a five-member lineup. However, over time, one member was always falling behind, either due to a lack of commitment or a reluctance to fully get into thrash metal. \n\nThis led to the formation of Artifact’s core lineup, consisting of three dedicated members who gave their absolute best to the band: Volodymyr Ruzhak on vocals and guitar, Viktor Matushek on bass and backing vocals, and Igor Grant on drums and backing vocals. \n\nBy the time of their first live performance, they had already written a few original songs but still included some covers in their setlist. Several other songs were also performed at that concert, but the band eventually abandoned them in favor of a more distinct, Artifact-oriented sound.",
+        images: {
+            imageOne: {
+                src: founding_members,
+                alt: "Artifact founding members",
+            },
+            imageTwo: {
+                src: artifact_beginning,
+                alt: "Artifact rehearsal studio",
+            }
+        },
+        captions: {
+            text: "Artifact founding members:",
+            boldNames: "Volodymyr Ruzhak, Viktor Matushek, Igor Grant",
+            readDirection: "(from left to right).",
+            breakLineText: "Rehearsal stuff in their rehearsal studio."
+        }
+    },
+
+
+
+    
     firstPerformance: "First Live Performances and Recognition",
     livePerformancesAndRecognition: "The band began performing live in 2007, playing in numerous metal clubs in Lviv and expanding their fan base by performing concerts across Western Ukraine, including Rivne and Novoyavorivsk, while also appearing at multiple festivals in Kyiv. During this period, Artifact gained recognition in the Western Ukrainian metal scene and also achieved a milestone by securing third place in a national amateur metal competition held at the 'Lenin Rock Club' in Kyiv. \n\nFollowing this achievement, Artifact was featured in Western Ukraine's major magazine, EXPRESS, in an article titled 'Grandma Will Not Like It,' highlighting them as one of the top thrash metal bands in the region. The publication wrote: 'As for Ukraine, we have almost no artists working in this style. The only band that comes to mind is ARTIFACT'.",
     firstDemo: "First Demo (2010)",
