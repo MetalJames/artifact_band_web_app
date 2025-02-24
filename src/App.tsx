@@ -1,12 +1,13 @@
-import { bg2 } from "./assets";
-import { NavBar, Home, Footer, Music, Album, Band } from "./components";
+import { background } from "./assets";
+import { NavBar, Footer, Album, } from "./components";
+import { Home, Music, Band } from "./pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
   return (
     <BrowserRouter>
-    <div className="bg-cover bg-fixed bg-center" style={{ backgroundImage: `url(${bg2})` }}>
+    <div className="bg-cover bg-fixed bg-center" style={{ backgroundImage: `url(${background})` }}>
       <div className="flex flex-col bg-black text-white min-h-screen bg-opacity-70">
         <header>
           <NavBar/>

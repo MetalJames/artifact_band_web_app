@@ -26,7 +26,7 @@ export const Album = () => {
                 <div className="w-8/12">
                     {/* <h1 className="text-3xl text-bold">{album.title}</h1>
                     <p className="text-lg">Released: {album.year} year.</p> */}
-                    <img src={album.cover} alt={album.title} className="lg:w-9/12 w-full" />
+                    <img src={album.coverSmall} alt={album.title} className="lg:w-9/12 w-full" />
                 </div>
                 <div className="w-4/12">
                     <h3 className="font-bold">TRACKLIST:</h3>
