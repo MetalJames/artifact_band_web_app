@@ -3,7 +3,7 @@ import { bandInfo } from "../../utils";
 export const ArtifactLineups = () => {
     return (
         <div className="mb-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">{bandInfo.artifactLineup2009_2010.title}</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center sm:w-full w-3/4 mx-auto">{bandInfo.artifactLineup2009_2010.title}</h2>
             <div className="py-6">
                 <p className="mb-4">{bandInfo.artifactLineup2009_2010.description}</p>
                 <div className="flex flex-col py-4 w-full border rounded-md bg-gray-600 bg-opacity-30 p-4">

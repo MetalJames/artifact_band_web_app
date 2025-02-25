@@ -3,7 +3,7 @@ import { bandInfo } from '../../utils';
 export const TheBeginning = () => {
     return (
         <div className="mb-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">{bandInfo.theBeginning.title}</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center sm:w-full w-3/4 mx-auto">{bandInfo.theBeginning.title}</h2>
             <div className="py-6">
                 <div className="flex flex-col sm:w-2/5 w-full sm:float-right border rounded-md bg-gray-600 bg-opacity-30 p-4 sm:ml-4 ml-0 sm:mb-0 mb-4">
                     <div className="flex justify-between items-center gap-4">

@@ -4,6 +4,7 @@ export const albums = [
     {
         id: "no_one",
         title: "No One",
+        type: "Album",
         year: 2024,
         cover: NoOneIMG,
         coverSmall: NoOneIMGSmall,
@@ -44,6 +45,7 @@ export const albums = [
     {
         id: "dead_silence",
         title: "Dead Silence",
+        type: "Album",
         year: 2012,
         cover: DeadSilence,
         coverSmall: DeadSilenceSmall,
@@ -90,6 +92,7 @@ export const singles = [
         {
         id: "silent_storm",
         title: "Silent Storm",
+        type: "Single",
         year: 2020,
         cover: SilentStorm,
         coverSmall: SilentStormSmall,
