@@ -1,6 +1,6 @@
 import { background } from "./assets";
-import { NavBar, Footer, Album, } from "./components";
-import { Home, Music, Band } from "./pages";
+import { NavBar, Footer } from "./components";
+import { Home, Music, Album, Band } from "./pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

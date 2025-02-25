@@ -24,7 +24,6 @@ export const albums = [
         albumInfo: {
             introduction: "Recorded at Artifact Studio, No One represents a turning point in Artifact’s journey. After establishing a raw thrash metal foundation with Dead Silence (2012), this album fully shapes the band's signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. Unlike its predecessor, No One explores deeper themes of isolation, resilience, and self-reflection, both musically and lyrically. The recording process remained true to Artifact’s independent roots, with vocals captured in a makeshift studio, reinforcing the raw and personal nature of the album. \n\nThis album is also a testament to time and persistence—two of its tracks, No One and Lies We Live, were first brought to life in 2012 with original members Igor Grant and Viktor Matushek. Over the years, new ideas emerged, with songs written across more than a decade—from 2015 to 2020—before the final compositions, Who Am I and Drowning in Denial, were created in 2023, bringing the album full circle.",
             credits: {
-                // instrumentsAndProduction: "All Instruments, Vocals, and Production by Volodymyr Ruzhak",
                 members: [
                     { instrument: "All Instruments, Vocals, and Production", member: "Volodymyr Ruzhak" }
                 ],
@@ -65,7 +64,6 @@ export const albums = [
         albumInfo: {
             introduction: "Recorded in Artifact Studio, Dead Silence captures the raw, collective spirit of our band’s journey. Originally a four-member group, the album became a trio after one guitarist departed during recording. Each member brought their own energy—Volodymyr Ruzhak on vocals and guitar, Igor Grant on drums, and Viktor Matushek on bass—contributing both musically and vocally to shape the album’s intense, layered sound.",
             credits: {
-                // instrumentsAndProduction: "Volodymyr Ruzhak on Vocals, Guitar, and Solo; Drums performed by Igor Grant; Bass by Viktor Matushek. Backing Vocals also by Igor Grant and Viktor Matushek.",
                 members: [
                     { instrument: "Vocals, Guitar, and Solo:", member: " Volodymyr Ruzhak" },
                     { instrument: "Drums & Backing Vocals:", member: " Igor Grant" },
@@ -102,7 +100,6 @@ export const singles = [
         albumInfo: {
             introduction: "Recorded at Artifact Studio, Silent Storm marked Artifact’s return after years of silence. Composed, recorded, and produced solely by Volodymyr Ruzhak at home, the instrumental track carries a sense of uncertainty and transition, evolving from serenity into intensity.",
             credits: {
-                // instrumentsAndProduction: "All Instruments and Production by Volodymyr Ruzhak",
                 members: [
                     { instrument: "All Instruments and Production", member: "Volodymyr Ruzhak" }
                 ],
