@@ -41,6 +41,6 @@ export type Album = {
     year: number;
     cover: string;
     coverSmall?: string;
-    songs: Song[];
-    albumInfo: AlbumInfo;
+    songs?: Song[];
+    albumInfo?: AlbumInfo;
 }

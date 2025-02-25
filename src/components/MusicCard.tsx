@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
+import { Album } from "../utils/types";
 
-type MusicCardProps = {
-    id: string;
-    title: string;
-    year: number;
-    cover: string;
-    type: string;
-}
-
-export const MusicCard = ({ id, title, year, cover, type }: MusicCardProps) => (
+export const MusicCard = ({ id, title, year, cover, type }: Album) => (
     <Link to={`/music/${id}`} className="group sm:w-[45%] w-full sm:mb-0 mb-8">
         <div className="relative w-full">
             <img src={cover} alt={title} className="w-full h-full object-cover" />
