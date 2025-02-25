@@ -1,4 +1,4 @@
-import { Album } from "../utils/types";
+import { Album } from "../../utils/types";
 
 type Props = {
     album: Album;

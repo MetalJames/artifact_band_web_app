@@ -1,5 +1,4 @@
-import { Hero } from "../components/Hero"
-import { ShortAboutHome } from "../components/ShortAboutHome"
+import { Hero, ShortAboutHome } from "../components/";
 
 export const Home = () => {
     return (

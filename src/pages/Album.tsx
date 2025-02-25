@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { albums, singles } from "../utils";
-import { Tracklist } from "../components/Tracklist";
-import { AlbumInfo } from "../components/AlbumInfo";
+import { Tracklist } from "../components/album_comps/Tracklist";
+import { AlbumInfo } from "../components/album_comps/AlbumInfo";
 
 export const Album = () => {
 

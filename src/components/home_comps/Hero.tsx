@@ -1,5 +1,5 @@
-import { DeadSilence } from "../assets";
-import { albums } from "../utils/";
+import { DeadSilence } from "../../assets";
+import { albums } from "../../utils";
 
 export const Hero = () => {
     const featuredAlbum = albums.find((album) => album.id === "no_one")!;

@@ -1,4 +1,4 @@
-import { shortAbout } from "../utils/";
+import { shortAbout } from "../../utils";
 import { Link } from "react-router-dom";
 // import { ArtifactHeading } from "./ArtifactHeading";
 

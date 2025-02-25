@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { Song } from "../utils/types";
+import { Song } from "../../utils/types";
 
 type Props = {
     songs: Song[];
