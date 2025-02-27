@@ -1,4 +1,5 @@
-import { DeadSilence } from "../../assets";
+// import { DeadSilence, deadSilence_new } from "../../assets";
+import { deadSilence_new } from "../../assets";
 import { albums } from "../../utils";
 
 export const Hero = () => {
@@ -7,7 +8,7 @@ export const Hero = () => {
     return (
         <div className="relative w-full h-screen flex items-center justify-center">
             <img 
-                src={DeadSilence} 
+                src={deadSilence_new} 
                 alt={featuredAlbum.title} 
                 className="absolute top-0 left-0 w-full h-full object-fit"
             />
