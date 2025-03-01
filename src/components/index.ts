@@ -3,5 +3,7 @@ export { Footer } from "./Footer";
 export { ArtifactHeading } from "./ArtifactHeading";
 export { Hero } from "./home_comps/Hero";
 export { ShortAboutHome } from "./home_comps/ShortAboutHome";
+export { ArtifactTopTracks } from "./home_comps/ArtifactTopTracks";
+export { ArtifactYouTube } from "./home_comps/ArtifactYouTube";
 export { Tracklist } from "./album_comps/Tracklist";
 export { AlbumInfo } from "./album_comps/AlbumInfo";

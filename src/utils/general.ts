@@ -1,3 +1,5 @@
+import { dead_silence, fire, no_creation, no_one, who_am_i } from "../assets/songs";
+
 export const navLinks = [
     {
         id: "home",
@@ -16,7 +18,33 @@ export const navLinks = [
     },
 ]
 
-
+export const tracks = [
+    {
+        title: "No One",
+        album: "No One",
+        src: no_one
+    },
+    {
+        title: "Fire",
+        album: "Dead Silence",
+        src: fire
+    },
+    {
+        title: "No Creation",
+        album: "No One",
+        src: no_creation
+    },
+    {
+        title: "Who Am I",
+        album: "No One",
+        src: who_am_i
+    },
+    {
+        title: "Dead Silence",
+        album: "Dead Silence",
+        src: dead_silence
+    }
+];
 
 export const shortAbout = {
     title: "ARTIFACT",

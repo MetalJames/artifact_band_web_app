@@ -1,4 +1,4 @@
-import { Hero, ShortAboutHome } from "../components/";
+import { Hero, ShortAboutHome, ArtifactTopTracks, ArtifactYouTube } from "../components/";
 
 export const Home = () => {
     return (
@@ -6,6 +6,8 @@ export const Home = () => {
             <div>
                 <Hero />
                 <ShortAboutHome />
+                <ArtifactTopTracks />
+                <ArtifactYouTube />
             </div>
         </div>
     )
