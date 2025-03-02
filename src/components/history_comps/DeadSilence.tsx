@@ -6,10 +6,10 @@ export const DeadSilence = () => {
         <div className="mb-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">{bandInfo.deadSilenceAlbum.title}</h2>
             <div className="flex sm:flex-row flex-col-reverse py-6">
-                <div className="sm:w-3/5 w-full sm:pr-4 pr-0">
+                <div className="sm:w-3/5 w-full">
                     <p className="whitespace-pre-line">{bandInfo.deadSilenceAlbum.description}</p>
                 </div>
-                <div className="sm:w-2/5 w-full flex flex-col border rounded-md bg-gray-600 bg-opacity-30 p-4  sm:mb-0 mb-4">
+                <div className="sm:w-2/5 w-full flex flex-col border rounded-md bg-gray-600 bg-opacity-30 p-4 sm:ml-8 ml-0 sm:mb-0 mb-4">
                     <div className="flex flex-col gap-4 items-center">
                         
 

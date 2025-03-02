@@ -1,4 +1,4 @@
-import { DeadSilence, NoOneIMG, SilentStorm } from "../assets";
+import { DeadSilence, DeadSilenceRemastered, NoOneIMG, SilentStorm } from "../assets";
 import { artifact_2007_live, artifact_2007_live_small, artifact_2010_band, artifact_2010_band_small, artifact_2011_band, artifact_2011_band_small, artifact_beginning, artifact_last_live, demo_cover_2010, demo_cover_2010_small, demo_recording_2010, demo_recording_2010_small, ds_album, ds_album_small, express_paper, founding_members, founding_members_small } from "../assets/img";
 
 export const bandInfo = {
@@ -63,7 +63,7 @@ export const bandInfo = {
 
     firstDemo : {
         title: "First Demo (2010)",
-        demosAndTransitionToEnglish: "Initially performing in Ukrainian, Artifact later transitioned to English lyrics to reach a broader audience and meet festival requirements. By 2010, the band released its first demo, featuring the tracks 'Rukhaysya Shvydshe' (Moving to Be Fast), 'Misto Sniv' (Town of Dreams), 'Live at Studio' (later renamed 'Two Voices'), 'Drum in Studio' (a drum solo by Igor Grant), 'Prorok' (The Prophet), and 'Vogon' (Fire). \n\nThis demo marked an important step in shaping Artifact’s sound, leading to the development of their full-length debut album, Dead Silence (2012).",
+        demosAndTransitionToEnglish: "Initially performing in Ukrainian, Artifact later transitioned to English lyrics to reach a broader audience and meet festival requirements. \n\nBy 2010, the band released its first demo, featuring the tracks 'Rukhaysya Shvydshe' (Moving to Be Fast), 'Misto Sniv' (Town of Dreams), 'Live at Studio' (later renamed 'Two Voices'), 'Drum in Studio' (a drum solo by Igor Grant), 'Prorok' (The Prophet), and 'Vogon' (Fire). \n\nThis demo marked an important step in shaping Artifact’s sound, leading to the development of their full-length debut album, Dead Silence (2012).",
         images: {
             imageOne: {
                 small: {
@@ -131,7 +131,7 @@ export const bandInfo = {
     
     deadSilenceAlbum: {
         title: "Recording and Release of 'Dead Silence' (2012)",
-        description: "In 2011, Artifact began work on their debut album, Dead Silence, recorded at Artifact Studio and officially released in September 2012. The recording process was split into two key phases—tracking the instruments and vocals, followed by an extensive period of mastering and fine-tuning the sound. With a limited budget, the band dedicated countless hours to critical listening, refining the mix to achieve the best quality possible. Artifact set up their own recording space, allowing for a fully independent process where every member contributed with full strength and support. Unfortunately, one member left before the recording was completed, but the remaining trio pushed forward to finish the album. \n\nThroughout the recording, Iuliia Polinovska presented multiple artwork concepts, and after careful consideration, the band selected the final design, which visually captured the album’s haunting themes. \n\nIn September 2012, Dead Silence was released online and as a limited edition audio CD. Shortly after its release, Artifact took a break as Volodymyr relocated to Canada, putting the band on hold.",
+        description: "In 2011, Artifact began work on their debut album, Dead Silence, recorded at Artifact Studio and officially released in September 2012. The recording process was split into two key phases—tracking the instruments and vocals, followed by an extensive period of mastering and fine-tuning the sound. \n\nWith a limited budget, the band dedicated countless hours to critical listening, refining the mix to achieve the best quality possible. Artifact set up their own recording space, allowing for a fully independent process where every member contributed with full strength and support. Unfortunately, one member left before the recording was completed, but the remaining trio pushed forward to finish the album. \n\nThroughout the recording, Iuliia Polinovska presented multiple artwork concepts, and after careful consideration, the band selected the final design, which visually captured the album’s haunting themes. \n\nIn September 2012, Dead Silence was released online and as a limited edition audio CD. Shortly after its release, Artifact took a break as Volodymyr relocated to Canada, putting the band on hold.",
         images: {
             imageOne: {
                 small: {
@@ -166,7 +166,7 @@ export const bandInfo = {
 
     silentStormSingle: {
         title: "Silent Storm: Artifact's Return (2020-2022)",
-        description: "In 2020, Artifact broke their silence with the release of Silent Storm, an instrumental single composed, recorded, and produced solely by Volodymyr Ruzhak at home. Though Artifact had been inactive for years, Volodymyr never stopped writing—storing melodies, structuring riffs in Guitar Pro, and drafting lyrics in preparation for a possible return. Silent Storm became the first step in testing whether he could take full creative control and produce music entirely on his own. The process proved successful, thanks to the encouragement of past band members and the visual artistry of Iuliia Polinovska, who designed the cover art. With renewed confidence, Artifact’s journey resumed, setting the stage for what would come next. \n\nAs fate would have it, Silent Storm was released in September 2022—exactly 10 years after Dead Silence. A coincidence? Maybe. Or perhaps Artifact was always meant to return.",
+        description: "In 2020, Artifact broke their silence with the release of Silent Storm, an instrumental single composed, recorded, and produced solely by Volodymyr Ruzhak at home. Though Artifact had been inactive for years, Volodymyr never stopped writing—storing melodies, structuring riffs in Guitar Pro, and drafting lyrics in preparation for a possible return. \n\nSilent Storm became the first step in testing whether he could take full creative control and produce music entirely on his own. The process proved successful, thanks to the encouragement of past band members and the visual artistry of Iuliia Polinovska, who designed the cover art. With renewed confidence, Artifact’s journey resumed, setting the stage for what would come next. \n\nAs fate would have it, Silent Storm was released in September 2022—exactly 10 years after Dead Silence. A coincidence? Maybe. Or perhaps Artifact was always meant to return.",
         images: {
             imageOne: {
                 src: SilentStorm,
@@ -194,6 +194,22 @@ export const bandInfo = {
         captions: {
             coverArt: "Official Cover art for No One Album",
         },
+    },
+
+    deadSilenceRemastered: {
+        title: "Remastering 'Dead Silence' (2025)",
+        description: "To celebrate 20 years of Artifact, Dead Silence has been remastered and re-released in April 2025. The remastering process took place between late 2024 and early 2025, focusing on enhancing the album’s clarity, instrument separation, and overall mix balance. \n\nThis version retains the raw power of the original tracks while refining its sound to match modern production standards. The remaster features improved mix balance, more defined instrument separation, and modernized mastering techniques to match today’s high-quality standards. Each track has been carefully refined to bring out the full impact of its sound. \n\nAlongside the improved audio quality, the album features updated cover artwork, maintaining its original vision but enhanced for today’s higher resolution formats.",
+        images: {
+            imageOne: {
+                full: {
+                    src: DeadSilenceRemastered,
+                    alt: "Dead Silence Remastered Cover Art",
+                }
+            }
+        },
+        captions: {
+            newCoverArt: "Official Cover Art for Dead Silence Remastered"
+        }
     },
     
     futureOfArtifact: {

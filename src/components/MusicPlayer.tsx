@@ -24,7 +24,7 @@ export const MusicPlayer = () => {
     } = useMusicPlayer();
 
     // For hiding/showing the full player
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, setIsHidden] = useState(true);
 
     // Handler for user dragging the progress bar
     const handleSeek = (event: React.ChangeEvent<HTMLInputElement>) => {

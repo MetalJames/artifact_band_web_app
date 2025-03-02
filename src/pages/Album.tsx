@@ -37,10 +37,10 @@ export const Album = () => {
     }
 
     return (
-        <div className="flex flex-col sm:w-11/12 lg:w-4/5 2xl:w-3/5 w-10/12 w m-auto py-10 pt-20">
+        <div className="flex flex-col sm:w-11/12 lg:w-4/5 2xl:w-3/5 w-10/12 w m-auto py-10 pt-[6vw]">
             <div className="text-center pb-4 sm:pb-10">
-                <p>Released in {album.year}</p>
-                <p>{album.title}</p>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">{album.title}</h2>
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mt-2">Released in {album.year}</p>
             </div>
             <div className="flex sm:flex-row justify-around items-center flex-col">
                 {/* <img src={album.coverSmall} alt={album.title} className="sm:w-1/2 w-full cursor-pointer hover:opacity-75 transition" onClick={() => handleImageClick(album.cover, album.title)}/> */}

@@ -1,12 +1,14 @@
 import { shortAbout } from "../../utils";
 import { Link } from "react-router-dom";
+import { ArtifactHeading } from "../ArtifactHeading";
 // import { ArtifactHeading } from "./ArtifactHeading";
 
 export const ShortAboutHome = () => {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48 py-16 text-white">
+        <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48 text-white">
             {/* Title */}
-            <h1 className="text-5xl md:text-6xl font-bold tracking-wide text-center">{shortAbout.title}</h1>
+            {/* <h1 className="text-5xl md:text-6xl font-bold tracking-wide text-center">{shortAbout.title}</h1> */}
+            <ArtifactHeading />
             {/* <ArtifactHeading /> */}
 
             {/* Description */}

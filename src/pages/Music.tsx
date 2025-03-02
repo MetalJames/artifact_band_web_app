@@ -5,10 +5,10 @@ console.log(albums)
 
 export const Music = () => {
     return (
-        <div className="flex justify-center pt-20">
-            <div className="flex flex-col sm:w-3/5 w-9/12">
+        <div className="flex justify-center py-20">
+            <div className="flex flex-col sm:w-4/5 w-9/12">
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-bold my-4">Albums</h1>
-                <div className="flex sm:flex-row flex-col justify-between">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {albums.map((album) => (
                         <MusicCard
                             key={album.id}
@@ -21,7 +21,7 @@ export const Music = () => {
                     ))}
                 </div>
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-bold my-4">Singles</h1>
-                <div className="flex justify-between">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {singles.map((single) => (
                         <MusicCard
                             key={single.id}

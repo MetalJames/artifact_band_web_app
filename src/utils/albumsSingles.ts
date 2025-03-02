@@ -1,6 +1,48 @@
-import { DeadSilence, DeadSilenceSmall, NoOneIMG, NoOneIMGSmall, SilentStorm, SilentStormSmall } from "../assets"
+import { DeadSilence, DeadSilenceRemastered, NoOneIMG, NoOneIMGSmall, SilentStorm, SilentStormSmall } from "../assets"
 
 export const albums = [
+    {
+        id: "dead_silence_remastered",
+        title: "Dead Silence (Remastered)",
+        type: "Album",
+        year: 2025,
+        cover: DeadSilenceRemastered,
+        songs: [
+            { title: "Moving to be Fast", length: "3:29", youtubeLink: "" },
+            { title: "Puppet", length: "4:31", youtubeLink: "" },
+            { title: "Fire", length: "5:04", youtubeLink: "" },
+            { title: "Bad Time", length: "4:46", youtubeLink: "" },
+            { title: "Two Voices", length: "3:52", youtubeLink: "" },
+            { title: "The Prophet", length: "3:48", youtubeLink: "" },
+            { title: "Dead Silence", length: "4:25", youtubeLink: "" },
+            { title: "Needed by Nobody", length: "3:28", youtubeLink: "" },
+            { title: "Native Land", length: "6:29", youtubeLink: "" },
+            { title: "Town of Dreams", length: "4:32", youtubeLink: "" },
+            { title: "Outro", length: "1:27", youtubeLink: "" }
+        ],
+        albumInfo: {
+            introduction: "Originally recorded at Artifact Studio, Dead Silence captures the raw, collective spirit of Artifact’s journey. The album was created as a trio, with Volodymyr Ruzhak on vocals and guitar, Igor Grant on drums, and Viktor Matushek on bass—each contributing both musically and vocally to shape its intense, layered sound. \n\n2025 marks 20 years of Artifact, and to honor this milestone, Dead Silence is being remastered and re-released. Dead Silence was where it all started, and now, 13 years later, it returns with the same power—only sharper, clearer, and more alive. The remaster features improved mix balance, more defined instrument separation, and modernized mastering techniques to match today’s high-fidelity standards. Each track has been carefully refined to bring out the full impact of its sound.",
+            credits: {
+                members: [
+                    { instrument: "Vocals, Guitar, and Solo:", member: " Volodymyr Ruzhak" },
+                    { instrument: "Drums & Backing Vocals:", member: " Igor Grant" },
+                    { instrument: "Bass & Backing Vocals:", member: " Viktor Matushek" }
+                ],
+                songwriting: [
+                    { song: "Moving to be Fast", music: "Roman Yarema", lyrics: "Volodymyr Ruzhak" },
+                    { song: "Town of Dreams", music: "Band collaboration", lyrics: "Viktor Matushek" },
+                    { song: "All Other Tracks", music: "Band collaboration", lyrics: "Volodymyr Ruzhak, with contributions from the band" }
+                ],
+                recordingLocation: "Originally recorded at Artifact Studio, remastered in 2025.",
+                mastering: "Remastered by: Volodymyr Ruzhak"
+            },
+            artworkAndDesign: {
+                coverArt: "The album cover has been reimagined by Iuliia Polinovska, enhancing the original concept with greater detail, sharper contrast, and a refined visual aesthetic that amplifies the themes of Dead Silence.",
+                layoutDesign: "Cover Art & Layout Design: Iuliia Polinovska"
+            },
+            specialThanks: "We would like to extend our gratitude to our families, friends, and fans who continue to inspire and support us through every note. Special thanks to Igor Grant and Viktor Matushek for their contributions to the original album and to Iuliia Polinovska for revitalizing its visual essence in this remaster."
+        }
+    },
     {
         id: "no_one",
         title: "No One",
@@ -47,7 +89,6 @@ export const albums = [
         type: "Album",
         year: 2012,
         cover: DeadSilence,
-        coverSmall: DeadSilenceSmall,
         songs: [
             { title: "Moving to be Fast", length: "3:29", youtubeLink: "https://youtu.be/Tn_bWjefjHg" },
             { title: "Puppet", length: "4:31", youtubeLink: "https://youtu.be/xicnRNp73Tg" },

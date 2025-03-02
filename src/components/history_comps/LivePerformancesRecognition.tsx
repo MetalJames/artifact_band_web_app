@@ -6,7 +6,7 @@ export const LivePerformancesRecognition = () => {
         <div className="mb-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">{bandInfo.livePerformancesAndRecognition.title}</h2>
             <div className="flex sm:flex-row flex-col py-6">
-                <div className="flex flex-col sm:w-2/5 w-full border rounded-md bg-gray-600 bg-opacity-30 p-4 sm:mb-0 mb-4">
+                <div className="flex flex-col sm:w-2/5 w-full border rounded-md bg-gray-600 bg-opacity-30 p-4 sm:mr-8 mr-0 sm:mb-0 mb-4">
                     <div className="flex justify-between items-center gap-4">
                         
                         <ImageWithModal 
@@ -33,7 +33,7 @@ export const LivePerformancesRecognition = () => {
                         {bandInfo.livePerformancesAndRecognition.captions.magazineArticle}
                     </p>
                 </div>
-                <p className="sm:pl-4 pl-0 sm:w-3/5 w-full whitespace-pre-line">{bandInfo.livePerformancesAndRecognition.liveEventExpressArticle}</p>
+                <p className="sm:w-3/5 w-full whitespace-pre-line">{bandInfo.livePerformancesAndRecognition.liveEventExpressArticle}</p>
             </div>
         </div>
     )
