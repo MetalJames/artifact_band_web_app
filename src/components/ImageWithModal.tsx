@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ImageModal } from "./ImageModal";
 
 type ImageWithModalProps = {
@@ -12,11 +12,13 @@ type ImageWithModalProps = {
 export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: ImageWithModalProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [loadedLargeSrc, setLoadedLargeSrc] = useState<string | null>(null);
+    const hasLoadedLarge = useRef(false);
 
     // Load large image only when modal is opened
     useEffect(() => {
-        if (isOpen) {
+        if (isOpen && !hasLoadedLarge.current) {
             setLoadedLargeSrc(largeSrc);
+            hasLoadedLarge.current = true;
         }
     }, [isOpen, largeSrc]);
     

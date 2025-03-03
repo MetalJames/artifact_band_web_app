@@ -7,3 +7,4 @@ export { ArtifactTopTracks } from "./home_comps/ArtifactTopTracks";
 export { ArtifactYouTube } from "./home_comps/ArtifactYouTube";
 export { Tracklist } from "./album_comps/Tracklist";
 export { AlbumInfo } from "./album_comps/AlbumInfo";
+export { ErrorBoundary } from "./ErrorBoundary";

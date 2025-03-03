@@ -1,35 +1,70 @@
 import { background } from "./assets";
-import { NavBar, Footer } from "./components";
+import { NavBar, Footer, ErrorBoundary } from "./components";
 import { MusicPlayer } from "./components/MusicPlayer";
 import { MusicPlayerProvider } from "./state/MusicPlayerContext/Provider";
-import { Home, Music, Album, Band } from "./pages";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./AppRoutes";
 
 function App() {
-
   return (
-    <MusicPlayerProvider >
-      <BrowserRouter>
-      <div className="bg-cover bg-fixed bg-center" style={{ backgroundImage: `url(${background})` }}>
-        <div className="flex flex-col bg-black text-white min-h-screen bg-opacity-70">
-          <header>
-            <NavBar/>
-          </header>
-          <main className="flex-grow">
-            <Routes>
-              <Route path='' element={<Home />} />
-              <Route path='/music' element={<Music />} />
-              <Route path='/music/:id' element={<Album />} />
-              <Route path='/band' element={<Band />} />
-            </Routes>
-          </main>
-          <MusicPlayer />
-          <Footer />
-        </div>
-      </div>
-      </BrowserRouter>
-    </MusicPlayerProvider>
-  )
+    <ErrorBoundary
+      fallback={
+        <div className="text-red-500 p-4">Critical error! Please refresh.</div>
+      }
+    >
+      <ErrorBoundary
+        fallback={
+          <div className="text-gray-300 text-center p-4">
+            MusicPlayer is unavailable.
+          </div>
+        }
+      >
+        <MusicPlayerProvider>
+          <BrowserRouter>
+            <div
+              className="bg-cover bg-fixed bg-center"
+              style={{ backgroundImage: `url(${background})` }}
+            >
+              <div className="flex flex-col bg-black text-white min-h-screen bg-opacity-70">
+                <header>
+                  <ErrorBoundary
+                    fallback={
+                      <div className="text-gray-300 p-4">
+                        Navigation failed to load.
+                      </div>
+                    }
+                  >
+                    <NavBar />
+                  </ErrorBoundary>
+                </header>
+                <main className="flex-grow">
+                  <AppRoutes />
+                </main>
+                <ErrorBoundary
+                  fallback={
+                    <div className="text-gray-500 text-center p-4">
+                      Music player error.
+                    </div>
+                  }
+                >
+                  <MusicPlayer />
+                </ErrorBoundary>
+                <ErrorBoundary
+                  fallback={
+                    <div className="text-gray-300 p-4">
+                      Footer not available.
+                    </div>
+                  }
+                >
+                  <Footer />
+                </ErrorBoundary>
+              </div>
+            </div>
+          </BrowserRouter>
+        </MusicPlayerProvider>
+      </ErrorBoundary>
+    </ErrorBoundary>
+  );
 }
 
-export default App
+export default App;

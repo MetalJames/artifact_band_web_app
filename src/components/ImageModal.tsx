@@ -32,7 +32,8 @@ export const ImageModal = ({ imageSrc, caption, isOpen, onClose }: ImageModalPro
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
             <div className="relative flex flex-col w-full h-full justify-center items-center">
                 <img 
-                    src={imageSrc} 
+                    src={imageSrc}
+                    loading="lazy"
                     alt="Full size" 
                     className={`absolute ${isFullScreen ? "w-auto h-auto max-w-[95vw] max-h-[95vh] object-contain" : "w-auto h-auto max-w-[60vw] max-h-[60vh] object-contain"} rounded-lg`}
                 />
