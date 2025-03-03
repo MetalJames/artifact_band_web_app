@@ -11,7 +11,16 @@ type ImageWithModalProps = {
 
 export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: ImageWithModalProps) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [loadedLargeSrc, setLoadedLargeSrc] = useState<string | null>(null);
 
+    // Load large image only when modal is opened
+    useEffect(() => {
+        if (isOpen) {
+            setLoadedLargeSrc(largeSrc);
+        }
+    }, [isOpen, largeSrc]);
+    
+    // Handle Escape key to close modal
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === "Escape") {
@@ -31,14 +40,15 @@ export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: 
             {/* Small image (if exists), otherwise use large image */}
             <img 
                 src={smallSrc || largeSrc} 
-                alt={alt} 
+                alt={alt}
                 className={`${className} cursor-pointer hover:opacity-80 transition`} 
+                loading="lazy" 
                 onClick={() => setIsOpen(true)}
             />
 
             {/* Image Modal */}
             <ImageModal 
-                imageSrc={largeSrc} 
+                imageSrc={loadedLargeSrc || largeSrc} 
                 caption={caption} 
                 isOpen={isOpen} 
                 onClose={() => setIsOpen(false)} 
