@@ -1,15 +1,11 @@
-// import { DeadSilence, deadSilence_new } from "../../assets";
 import { deadSilence_new } from "../../assets";
-import { albums } from "../../utils";
 
 export const Hero = () => {
-    const featuredAlbum = albums.find((album) => album.id === "no_one")!;
-
     return (
         <div className="relative w-full h-screen flex items-center justify-center bg-black">
             <img 
                 src={deadSilence_new} 
-                alt={featuredAlbum.title} 
+                alt="Artifact Dead Silence Remastered"
                 className="absolute top-0 left-0 w-full h-full object-contain"
             />
             {/* <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">

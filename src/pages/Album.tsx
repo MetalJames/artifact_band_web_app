@@ -38,7 +38,7 @@ export const Album = () => {
     }
 
     return (
-        <div className="flex flex-col sm:w-11/12 lg:w-4/5 2xl:w-3/5 w-10/12 w m-auto py-10 pt-[6vw]">
+        <div className="flex flex-col sm:w-11/12 lg:w-4/5 2xl:w-3/5 w-10/12 w m-auto py-10 pt-28 sm:pt-[6vw]">
             {/* <SEO title="Album | Artifact Band" description="Explore Artifact Band's latest albums" /> */}
             <SEO 
                 title={`${album.title} - Artifact Band`}
@@ -58,7 +58,7 @@ export const Album = () => {
                     // caption={album.title} 
                     className="sm:w-1/2 w-full"
                 />
-                <div className="sm:w-2/5 xl:w-4/12 w-full">
+                <div className="sm:w-2/5 xl:w-4/12 w-full mt-10 sm:mt-0">
                     <h3 className="font-bold">TRACKLIST:</h3>
                     <Tracklist songs={album.songs} />
                 </div>

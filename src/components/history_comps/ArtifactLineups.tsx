@@ -13,19 +13,19 @@ export const ArtifactLineups = () => {
                             smallSrc={bandInfo.artifactLineup2009_2010.images.imageOne.small.src} 
                             largeSrc={bandInfo.artifactLineup2009_2010.images.imageOne.full.src} 
                             alt={bandInfo.artifactLineup2009_2010.images.imageOne.small.alt} 
-                            className="sm:w-1/4 w-3/4 sm:h-48 h-auto object-cover rounded-lg shadow-md"
+                            className="sm:w-1/4 w-full sm:h-48 h-auto object-cover rounded-lg shadow-md"
                         />
                         <ImageWithModal 
                             smallSrc={bandInfo.artifactLineup2009_2010.images.imageTwo.small.src} 
                             largeSrc={bandInfo.artifactLineup2009_2010.images.imageTwo.full.src} 
                             alt={bandInfo.artifactLineup2009_2010.images.imageTwo.small.alt} 
-                            className="sm:w-1/3 w-3/4 sm:h-48 h-auto object-fit rounded-lg shadow-md"
+                            className="sm:w-1/3 w-full sm:h-48 h-auto object-fit rounded-lg shadow-md"
                         />
                         <ImageWithModal 
                             smallSrc={bandInfo.artifactLineup2009_2010.images.imageThree.small.src} 
                             largeSrc={bandInfo.artifactLineup2009_2010.images.imageThree.full.src} 
                             alt={bandInfo.artifactLineup2009_2010.images.imageThree.small.alt} 
-                            className="sm:w-1/4 w-3/4 sm:h-48 h-auto object-cover rounded-lg shadow-md"
+                            className="sm:w-1/4 w-full sm:h-48 h-auto object-cover rounded-lg shadow-md"
                         />
                     </div>
                     <p className="text-sm mt-2 border-t pt-2">

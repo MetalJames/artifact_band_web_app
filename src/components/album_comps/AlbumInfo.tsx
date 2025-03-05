@@ -8,7 +8,7 @@ export const AlbumInfo = ({ album }: Props ) => {
     if (!album.albumInfo) return null;
 
     return (
-        <div className="sm:w-6/12 w-full mt-[4vw] m-auto">
+        <div className="sm:w-6/12 w-full mt-10 sm:mt-[4vw] m-auto">
             <h3 className="font-bold mb-2">"{album.title}" (Album, {album.year})</h3>
             <p className="border-l-4 pl-4 mb-4 text-gray-300 text-sm sm:text-base whitespace-pre-line">
                 {album.albumInfo.introduction}
