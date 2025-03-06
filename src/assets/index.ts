@@ -10,4 +10,7 @@ import background from './background.png';
 import deadSilence_new from './DEAD_SILENCE_wide_2xl(remastered).jpg';
 import DeadSilenceRemastered from './DeadSilenceRemastered.jpg';
 
-export { deadSilence_new, NoOneIMG, NoOneIMGSmall, DeadSilence, ArtifactLogo, SilentStorm, SilentStormSmall, Artifact, background, DeadSilenceRemastered };
+import MenuIcon from './menu.svg';
+import CloseIcon from './close.svg';
+
+export { deadSilence_new, NoOneIMG, NoOneIMGSmall, DeadSilence, ArtifactLogo, SilentStorm, SilentStormSmall, Artifact, background, DeadSilenceRemastered, MenuIcon, CloseIcon };

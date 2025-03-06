@@ -5,6 +5,8 @@ import { MusicPlayerProvider } from "./state/MusicPlayerContext/Provider";
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./AppRoutes";
 import { HelmetProvider } from "react-helmet-async";
+import { ScrollToTop } from "./components/ScrollToTop";
+// import { GoToTop } from "./components/GoToTop";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         >
           <MusicPlayerProvider>
             <BrowserRouter>
+              <ScrollToTop />
               <div
                 className="bg-cover bg-fixed bg-center"
                 style={{ backgroundImage: `url(${background})` }}
@@ -42,6 +45,7 @@ function App() {
                   <main className="flex-grow">
                     <AppRoutes />
                   </main>
+                  {/* <GoToTop /> */}
                   <ErrorBoundary
                     fallback={
                       <div className="text-gray-500 text-center p-4">
