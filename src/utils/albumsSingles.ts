@@ -58,10 +58,10 @@ export const albums = [
             { title: "Who Am I", length: "5:29", youtubeLink: 'https://youtu.be/4nMNVhNrcGE' },
             { title: "Drowning in Denial", length: "4:59", youtubeLink: 'https://youtu.be/j50OPmiccIk' },
             { title: "Insanity", length: "3:57", youtubeLink: 'https://youtu.be/wAbLpgkK1Bs' },
-            { title: "Fade Away (Instrumental)", length: "4:30", youtubeLink: 'https://youtu.be/nJcVBd1LFqs' },
+            { title: "Fade Away", length: "4:30", youtubeLink: 'https://youtu.be/nJcVBd1LFqs' },
             { title: "Deception's Grid", length: "3:44", youtubeLink: 'https://youtu.be/HnyAk-3MwS4' },
             { title: "Trapped Inside", length: "3:43", youtubeLink: 'https://youtu.be/OJF2iiBWWrk' },
-            { title: "Farewell (Outro Instrumental)", length: "2:23", youtubeLink: 'https://youtu.be/mZilyOg7Bx0' },
+            { title: "Another Day", length: "2:23", youtubeLink: 'https://youtu.be/mZilyOg7Bx0' },
         ],
         albumInfo: {
             introduction: "Recorded at Artifact Studio, No One represents a turning point in Artifact’s journey. After establishing a raw thrash metal foundation with Dead Silence (2012), this album fully shapes the band's signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. Unlike its predecessor, No One explores deeper themes of isolation, resilience, and self-reflection, both musically and lyrically. The recording process remained true to Artifact’s independent roots, with vocals captured in a makeshift studio, reinforcing the raw and personal nature of the album. \n\nThis album is also a testament to time and persistence—two of its tracks, No One and Lies We Live, were first brought to life in 2012 with original members Igor Grant and Viktor Matushek. Over the years, new ideas emerged, with songs written across more than a decade—from 2015 to 2020—before the final compositions, Who Am I and Drowning in Denial, were created in 2023, bringing the album full circle.",
