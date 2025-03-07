@@ -1,4 +1,4 @@
-import { DeadSilence, DeadSilenceRemastered, NoOneIMG, SilentStorm } from "../assets";
+import { DeadSilence, deadSilence_full_hd, deadSilence_full_hd_small, NoOneIMG, SilentStorm } from "../assets";
 import { artifact_2007_live, artifact_2007_live_small, artifact_2010_band, artifact_2010_band_small, artifact_2011_band, artifact_2011_band_small, artifact_beginning, artifact_last_live, demo_cover_2010, demo_cover_2010_small, demo_recording_2010, demo_recording_2010_small, ds_album, ds_album_small, express_paper, founding_members, founding_members_small } from "../assets/img";
 
 export const bandInfo = {
@@ -201,8 +201,12 @@ export const bandInfo = {
         description: "To celebrate 20 years of Artifact, Dead Silence has been remastered and re-released in April 2025. The remastering process took place between late 2024 and early 2025, focusing on enhancing the album’s clarity, instrument separation, and overall mix balance. \n\nThis version retains the raw power of the original tracks while refining its sound to match modern production standards. The remaster features improved mix balance, more defined instrument separation, and modernized mastering techniques to match today’s high-quality standards. Each track has been carefully refined to bring out the full impact of its sound. \n\nAlongside the improved audio quality, the album features updated cover artwork, maintaining its original vision but enhanced for today’s higher resolution formats.",
         images: {
             imageOne: {
+                small: {
+                    src: deadSilence_full_hd_small,
+                    alt: "Artifact founding members (small)",
+                },
                 full: {
-                    src: DeadSilenceRemastered,
+                    src: deadSilence_full_hd,
                     alt: "Dead Silence Remastered Cover Art",
                 }
             }
