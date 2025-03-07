@@ -1,4 +1,4 @@
-import { DeadSilence, DeadSilenceRemastered, NoOneIMG, NoOneIMGSmall, SilentStorm, SilentStormSmall } from "../assets"
+import { DeadSilence, deadSilence_full_hd, NoOneIMG, NoOneIMGSmall, SilentStorm, SilentStormSmall } from "../assets"
 
 export const albums = [
     {
@@ -6,7 +6,7 @@ export const albums = [
         title: "Dead Silence (Remastered)",
         type: "Album",
         year: 2025,
-        cover: DeadSilenceRemastered,
+        cover: deadSilence_full_hd,
         songs: [
             { title: "Moving to be Fast", length: "3:29", youtubeLink: "" },
             { title: "Puppet", length: "4:31", youtubeLink: "" },

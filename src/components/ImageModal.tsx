@@ -29,7 +29,7 @@ export const ImageModal = ({ imageSrc, caption, isOpen, onClose }: ImageModalPro
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[100]">
             <div className="relative flex flex-col w-full h-full justify-center items-center">
                 <img 
                     src={imageSrc}
