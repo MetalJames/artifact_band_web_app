@@ -1,27 +1,24 @@
 {
-    "headers": [
-        {
-            "source": "/sitemap.xml",
-            "headers": [
-                { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
-                { "key": "Pragma", "value": "no-cache" },
-                { "key": "Expires", "value": "0" },
-                { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
-            ]
-        },
-        {
-            "source": "/(.*).(jpg|png|webp|gif)",
-            "headers": [
-                { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-            ]
-        }
-    ],
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+        { "key": "Pragma", "value": "no-cache" },
+        { "key": "Expires", "value": "0" },
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/(.*).(jpg|png|webp|gif)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
 
-    "routes": [
-        { "src": "^/sitemap.xml$", "dest": "/public/sitemap.xml" }
-    ],
-
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/index.html", "has": [{ "type": "header", "key": "accept", "value": "text/html" }] }
-    ]
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
