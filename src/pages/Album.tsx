@@ -7,7 +7,7 @@ import { AlbumInfo } from "../components/album_comps/AlbumInfo";
 import { ImageWithModal } from "../components/ImageWithModal";
 import { SEO } from "../components/SEO";
 
-export const Album = () => {
+const Album = () => {
 
     const { id } = useParams();
     const album = albums.find((album) => album.id === id) || singles.find((single) => single.id === id);
@@ -43,7 +43,7 @@ export const Album = () => {
             <SEO 
                 title={`${album.title} - Artifact Band`}
                 description={`Explore ${album.title}, released in ${album.year}.`}
-                url={`https://artifact-band-web-app.vercel.app/albums/${album.id}`}
+                url={`https://artifact-band.vercel.app/albums/${album.id}`}
             />
             <div className="text-center pb-4 sm:pb-10">
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">{album.title}</h2>
@@ -74,3 +74,5 @@ export const Album = () => {
         </div>
     )
 };
+
+export default Album;

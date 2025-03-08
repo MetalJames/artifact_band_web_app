@@ -55,15 +55,15 @@ function App() {
                   >
                     <MusicPlayer />
                   </ErrorBoundary>
-                  <ErrorBoundary
+                  {/* <ErrorBoundary
                     fallback={
                       <div className="text-gray-300 p-4">
                         Footer not available.
                       </div>
                     }
-                  >
+                  > */}
                     <Footer />
-                  </ErrorBoundary>
+                  {/* </ErrorBoundary> */}
                 </div>
               </div>
             </BrowserRouter>

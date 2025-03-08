@@ -27,10 +27,10 @@ export const Tracklist = ({ songs }: Props ) => {
                                 className="text-red-600 hover:text-red-800 transition-colors duration-200 ml-4"
                             >
                                 <FontAwesomeIcon
-                                icon={faYoutube}
-                                size="lg"
-                                aria-label="YouTube link"
-                                className={hoveredIndex === index ? 'fa-beat-fade' : ''}
+                                    icon={faYoutube}
+                                    size="lg"
+                                    aria-label="YouTube link"
+                                    className={hoveredIndex === index ? 'fa-beat-fade' : 'opacity-50 hover:opacity-100 transition-opacity duration-200'}
                                 />
                             </a>
                         )}

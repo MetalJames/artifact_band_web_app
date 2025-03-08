@@ -1,7 +1,7 @@
 import { Hero, ShortAboutHome, ArtifactTopTracks, ArtifactYouTube } from "../components/";
 import { SEO } from "../components/SEO";
 
-export const Home = () => {
+const Home = () => {
     return (
         <div>
             <div>
@@ -9,7 +9,7 @@ export const Home = () => {
                 <SEO 
                     title="Artifact - Official Website"
                     description="Discover Artifact, a powerful thrash metal band. Listen to our latest music, albums, and read band's history."
-                    url="https://artifact-band-web-app.vercel.app/"
+                    url="https://artifact-band.vercel.app/"
                 />
                 <Hero />
                 <ShortAboutHome />
@@ -19,3 +19,5 @@ export const Home = () => {
         </div>
     )
 };
+
+export default Home;
