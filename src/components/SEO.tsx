@@ -22,7 +22,7 @@ export const SEO = ({
             {/* Open Graph (Social Media Preview) */}
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content="https://artifact-band.vercel.app/Artifact_Logo_2.png" />
+            <meta property="og:image" content="https://artifact-band.vercel.app/dead_silence_full_hd.jpg" />
             {/* <meta property="og:image" content={image} /> */}
             <meta property="og:image:alt" content="Artifact Band Official Logo" />
             <meta property="og:url" content={url} />
