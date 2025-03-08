@@ -13,6 +13,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
+    <meta name="keywords" content="Artifact, Artifact Band, Artifact Metal Band, Artifact Metal Music, Thrash Metal" />
+
     <!-- Favicon & Apple Touch Icons -->
     <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -23,6 +25,20 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Artifact Metal Band",
+        "url": "https://artifact-band.vercel.app/",
+        "sameAs": [
+          "https://www.youtube.com/@artifact-band/featured"
+        ],
+        "genre": "Thrash Metal",
+        "description": "Official website of Artifact Metal Band. Listen to thrash metal albums, latest singles, and band history.",
+        "image": "https://artifact-band.vercel.app/dead_silence_full_hd.jpg"
+      }
+    </script>
   </body>
 </html>
 
