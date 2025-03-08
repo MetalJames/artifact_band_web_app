@@ -1,32 +1,19 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
+import { createHtmlPlugin } from "vite-plugin-html";
 import sitemap from "vite-plugin-sitemap";
 
 export default defineConfig({
   plugins: [
     react(),
 
-    // ✅ Generate Sitemap Automatically
+    // ✅ Generates a Sitemap Automatically
     sitemap({
       hostname: "https://artifact-band.vercel.app",
-      dynamicRoutes: ["/", "/music", "/band", "/music/no_one", "/music/dead_silence_remastered", "/music/dead_silence", "/music/silent_storm"], // Add dynamic pages manually
+      readable: true, // Pretty format
+      exclude: ["/private"], // Exclude unwanted routes
     }),
-
-    // sitemap({
-    //   hostname: "https://artifact-band.vercel.app",
-    //   exclude: ["/private-page"], // Exclude any private pages
-    //   readable: true, // Makes sitemap easier to read
-    //   dynamicRoutes: [
-    //     "/", 
-    //     "/music", 
-    //     "/band", 
-    //     "/music/no_one", 
-    //     "/music/dead_silence_remastered",
-    //     "/music/dead_silence",
-    //     "/music/silent_storm"
-    //   ], // Dynamic routes if needed
-    // }),
 
     // ✅ PWA Support (Optional)
     VitePWA({
@@ -47,10 +34,42 @@ export default defineConfig({
         ],
       },
     }),
+
+    // ✅ Helps Ensure Proper Meta Tags (for SEO)
+    createHtmlPlugin({
+      minify: true,
+    }),
   ],
+
+  // ✅ Ensure correct base URL (important for sitemap generation)
+  base: "/",
+
+  // ✅ Set Correct Build Output & Optimization
+  build: {
+    outDir: "dist",
+    sourcemap: false,
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true, // Removes console.logs
+        drop_debugger: true,
+      },
+    },
+  },
+
+  // ✅ Fixes for Vercel Deployment
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
+
+  // ✅ Aliases for Clean Imports
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
 });
-
-
 
 
 
