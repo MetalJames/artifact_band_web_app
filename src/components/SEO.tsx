@@ -11,7 +11,7 @@ export const SEO = ({
         title = "Artifact Metal Band | Official Website",
         description = "Discover Artifact, a powerful thrash metal band. Listen to our latest music, albums, and read band's history.",
         url = "https://artifact-band.vercel.app/",
-        image= "https://artifact-band.vercel.app/dead_silence_full_hd_remastered.png",
+        image= "https://artifact-band.vercel.app/dead_silence_full_hd_remastered.jpg",
     }: SEOProps) => {
     return (
         <Helmet>
