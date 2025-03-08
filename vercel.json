@@ -1,22 +1,27 @@
 {
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/index.html" }
-    ],
     "headers": [
-        {
-            "source": "/(.*).(jpg|png|webp|gif)",
-            "headers": [
-                { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-            ]
-        },
         {
             "source": "/sitemap.xml",
             "headers": [
                 { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
                 { "key": "Pragma", "value": "no-cache" },
                 { "key": "Expires", "value": "0" },
-                { "key": "Content-Type", "value": "application/xml" }
+                { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+            ]
+        },
+        {
+            "source": "/(.*).(jpg|png|webp|gif|xml)",
+            "headers": [
+                { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
             ]
         }
+    ],
+
+    "routes": [
+        { "src": "/sitemap.xml", "dest": "/sitemap.xml" }
+    ],
+
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/index.html" }
     ]
 }
