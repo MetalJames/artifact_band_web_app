@@ -2,18 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 import { createHtmlPlugin } from "vite-plugin-html";
-import sitemap from "vite-plugin-sitemap";
 
 export default defineConfig({
   plugins: [
     react(),
-
-    // ✅ Generates a Sitemap Automatically
-    sitemap({
-      hostname: "https://artifact-band.vercel.app",
-      readable: true, // Pretty format
-      exclude: ["/private"], // Exclude unwanted routes
-    }),
 
     // ✅ PWA Support (Optional)
     VitePWA({
@@ -41,7 +33,7 @@ export default defineConfig({
     }),
   ],
 
-  // ✅ Ensure correct base URL (important for sitemap generation)
+  // ✅ Ensure correct base URL
   base: "/",
 
   // ✅ Set Correct Build Output & Optimization
@@ -70,15 +62,3 @@ export default defineConfig({
     },
   },
 });
-
-
-
-
-
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-// })
