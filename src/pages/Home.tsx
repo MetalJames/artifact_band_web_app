@@ -13,13 +13,13 @@ const Home = () => {
                 />
                 <Hero />
 
-                <div className="text-center text-white py-12 px-6">
+                {/* <div className="text-center text-white py-12 px-6">
                     <h1 className="text-4xl font-bold">Artifact Metal Band</h1>
                     <p className="text-lg mt-4 max-w-2xl mx-auto">
                         Welcome to <strong>Artifact Metal Band</strong>, a legendary thrash metal act. 
                         Listen to our albums "<strong>No One</strong>" and "<strong>Dead Silence</strong>," and explore our history.
                     </p>
-                </div>
+                </div> */}
                 
                 <ShortAboutHome />
                 <ArtifactTopTracks />

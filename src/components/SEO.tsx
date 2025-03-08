@@ -8,10 +8,10 @@ type SEOProps = {
 };
 
 export const SEO = ({
-        title,
+        title = "Artifact Metal Band | Official Website",
         description = "Discover Artifact, a powerful thrash metal band. Listen to our latest music, albums, and read band's history.",
         url = "https://artifact-band.vercel.app/",
-        // image = "https://artifact-band.vercel.app/assets/Artifact_Logo_2-DWYl0FHn.png",
+        image= "https://artifact-band.vercel.app/dead_silence_full_hd_remastered.png",
     }: SEOProps) => {
     return (
         <Helmet>
@@ -22,9 +22,8 @@ export const SEO = ({
             {/* Open Graph (Social Media Preview) */}
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content="https://artifact-band.vercel.app/dead_silence_full_hd.jpg" />
-            {/* <meta property="og:image" content={image} /> */}
-            <meta property="og:image:alt" content="Artifact Band Official Logo" />
+            <meta property="og:image" content={image} />
+            <meta property="og:image:alt" content="Artifact Band Dead Silence Remastered" />
             <meta property="og:url" content={url} />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="Artifact Band" />
@@ -37,7 +36,7 @@ export const SEO = ({
 
 
             {/* Canonical URL (Prevents duplicate content issues) */}
-            <link rel="canonical" href={url} />
+            <link rel="canonical" href="https://artifact-band.vercel.app/" />
         </Helmet>
     );
 };

@@ -12,8 +12,13 @@ export const ShortAboutHome = () => {
 
             {/* Description */}
             <div className="mt-6 max-w-4xl text-lg md:text-xl leading-relaxed text-center text-gray-200">
-                <p className="whitespace-pre-line">{shortAbout.description}</p>
-                <p className="mt-8 text-xl md:text-2xl font-bold text-white">{shortAbout.announcement}</p>
+                <h1>
+                    {shortAbout.seoTextOne}
+                    <strong>{shortAbout.seoTextTwo}</strong>
+                    {shortAbout.seoTextThree}
+                </h1>
+                <p className="whitespace-pre-line mt-8">{shortAbout.description}</p>
+                <p className="mt-8 font-bold text-white">{shortAbout.announcement}</p>
                 <p className="mt-8 italic text-gray-200 text-lg md:text-xl">{shortAbout.statement}</p>
             </div>
 

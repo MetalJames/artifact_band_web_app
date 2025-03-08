@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://artifact-band.vercel.app/sitemap.xml
