@@ -29,6 +29,11 @@ export const SEO = ({
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="Artifact Band" />
 
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:type" content="image/png" />
+
+
             {/* Canonical URL (Prevents duplicate content issues) */}
             <link rel="canonical" href={url} />
         </Helmet>
