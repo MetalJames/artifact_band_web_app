@@ -12,7 +12,15 @@ export default defineConfig({
       hostname: "https://artifact-band.vercel.app",
       exclude: ["/private-page"], // Exclude any private pages
       readable: true, // Makes sitemap easier to read
-      dynamicRoutes: ["/music/no_one", "/music/dead_silence_remastered"], // Dynamic routes if needed
+      dynamicRoutes: [
+        "/", 
+        "/music", 
+        "/band", 
+        "/music/no_one", 
+        "/music/dead_silence_remastered",
+        "/music/dead_silence",
+        "/music/silent_storm"
+      ], // Dynamic routes if needed
     }),
 
     // ✅ PWA Support (Optional)
