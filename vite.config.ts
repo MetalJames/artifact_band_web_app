@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { VitePWA } from "vite-plugin-pwa";
+// import { VitePWA } from "vite-plugin-pwa";
 // import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig({
@@ -8,24 +8,24 @@ export default defineConfig({
     react(),
 
     // ✅ PWA Support (Optional)
-    VitePWA({
-      registerType: "autoUpdate",
-      manifest: {
-        name: "Artifact Thrash Metal Band",
-        short_name: "Artifact",
-        description:
-          "Official website of Artifact Thrash Metal Band. Listen to full albums, singles, and explore the band's history.",
-        theme_color: "#000000",
-        background_color: "#000000",
-        icons: [
-          {
-            src: "/favicon.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-        ],
-      },
-    }),
+    // VitePWA({
+    //   registerType: "autoUpdate",
+    //   manifest: {
+    //     name: "Artifact Thrash Metal Band",
+    //     short_name: "Artifact",
+    //     description:
+    //       "Official website of Artifact Thrash Metal Band. Listen to full albums, singles, and explore the band's history.",
+    //     theme_color: "#000000",
+    //     background_color: "#000000",
+    //     icons: [
+    //       {
+    //         src: "/favicon.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //   },
+    // }),
 
     // ✅ Helps Ensure Proper Meta Tags (for SEO)
     // createHtmlPlugin({
