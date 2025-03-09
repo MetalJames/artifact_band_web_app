@@ -37,28 +37,28 @@ export default defineConfig({
   // base: "/",
 
   // ✅ Set Correct Build Output & Optimization
-  build: {
-    outDir: "dist",
-    sourcemap: false,
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true, // Removes console.logs
-        drop_debugger: true,
-      },
-    },
-  },
+  // build: {
+  //   outDir: "dist",
+  //   sourcemap: false,
+  //   minify: "terser",
+  //   terserOptions: {
+  //     compress: {
+  //       drop_console: true, // Removes console.logs
+  //       drop_debugger: true,
+  //     },
+  //   },
+  // },
 
   // ✅ Fixes for Vercel Deployment
-  server: {
-    host: "0.0.0.0",
-    port: 5173,
-  },
+  // server: {
+  //   host: "0.0.0.0",
+  //   port: 5173,
+  // },
 
-  // ✅ Aliases for Clean Imports
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
-  },
+  // // ✅ Aliases for Clean Imports
+  // resolve: {
+  //   alias: {
+  //     "@": "/src",
+  //   },
+  // },
 });
