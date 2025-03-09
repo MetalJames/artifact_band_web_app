@@ -50,8 +50,8 @@ export const shortAbout = {
     title: "ARTIFACT",
     
     seoTextOne: "Welcome to ",
-    seoTextTwo: "Artifact Metal Band - ",
-    seoTextThree: "Official Thrash Metal Band Website.",
+    seoTextTwo: "Artifact Thrash Metal Band ",
+    seoTextThree: "Official Website.",
     description: "Artifact is a Ukrainian thrash metal band founded in November 2005 in Lviv, Ukraine. The early days of Artifact were filled with relentless practice, experimenting with sound, and finding the right balance—first building a raw thrash metal foundation, Dead Silence(2012), before evolving further in the second album, No One (2024), where Artifact fully shaped its signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. \n\nArtifact has released two full albums, Dead Silence (2012) and No One (2024), along with the instrumental single Silent Storm (2020).",
 
     
