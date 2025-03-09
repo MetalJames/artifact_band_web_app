@@ -8,7 +8,7 @@ export const ArtifactYouTube = () => {
             </h3>
             <p className="text-center text-gray-300 mt-2">
                 <a
-                    href="https://www.youtube.com/@artifact-band/featured"
+                    href="https://www.youtube.com/@ArtifactThrashMetal/featured"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-red-500 font-semibold flex justify-center items-center gap-2 transition hover:text-red-300"
