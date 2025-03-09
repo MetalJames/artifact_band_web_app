@@ -11,10 +11,10 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "Artifact Metal Band",
+        name: "Artifact Thrash Metal Band",
         short_name: "Artifact",
         description:
-          "Official website of Artifact Metal Band. Listen to thrash metal music and explore the band’s history.",
+          "Official website of Artifact Thrash Metal Band. Listen to full albums, singles, and explore the band's history.",
         theme_color: "#000000",
         background_color: "#000000",
         icons: [
@@ -34,7 +34,7 @@ export default defineConfig({
   ],
 
   // ✅ Ensure correct base URL
-  base: "/",
+  // base: "/",
 
   // ✅ Set Correct Build Output & Optimization
   build: {

@@ -6,7 +6,7 @@ import { SEO } from "../components/SEO";
 const Band = () => {
     return (
         <div className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-4/5 xl:w-8/12 2xl:w-1/2 flex flex-col items-center m-auto py-10 pt-20">
-            <SEO title="About the Band | Artifact Band" description="Learn about Artifact thrash metal band" url="https://artifact-band.vercel.app/band"/>
+            <SEO title="About the Band | Artifact Thrash Metal Band" description="Learn about the history and journey of Artifact Thrash Metal Band." url="https://artifact-band.vercel.app/band"/>
             <ArtifactHeading />
             <TheBeginning />
             <LivePerformancesRecognition />

@@ -41,7 +41,7 @@ const Album = () => {
         <div className="flex flex-col sm:w-11/12 lg:w-4/5 2xl:w-3/5 w-10/12 w m-auto py-10 pt-28 sm:pt-[6vw]">
             {/* <SEO title="Album | Artifact Band" description="Explore Artifact Band's latest albums" /> */}
             <SEO 
-                title={`${album.title} - Artifact Band`}
+                title={`${album.title} - Artifact Thrash Metal Band`}
                 description={`Explore ${album.title}, released in ${album.year}.`}
                 url={`https://artifact-band.vercel.app/albums/${album.id}`}
             />

@@ -6,8 +6,8 @@ const Home = () => {
         <div>
             <div>
                 <SEO 
-                    title="Artifact - Official Website"
-                    description="Discover Artifact, a powerful thrash metal band. Listen to our latest music, albums, and read band's history."
+                    title="Artifact Thrash Metal Band - Official Website"
+                    description="Official website of Artifact Thrash Metal Band. Listen to our latest thrash metal albums, singles, and read the band's history."
                     url="https://artifact-band.vercel.app/"
                 />
                 <Hero />
