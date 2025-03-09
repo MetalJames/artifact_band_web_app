@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
-import { createHtmlPlugin } from "vite-plugin-html";
+// import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig({
   plugins: [
@@ -28,9 +28,9 @@ export default defineConfig({
     }),
 
     // ✅ Helps Ensure Proper Meta Tags (for SEO)
-    createHtmlPlugin({
-      minify: true,
-    }),
+    // createHtmlPlugin({
+    //   minify: true,
+    // }),
   ],
 
   // ✅ Ensure correct base URL

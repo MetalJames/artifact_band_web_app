@@ -5,12 +5,7 @@ import { ArtifactHeading } from "../ArtifactHeading";
 export const ShortAboutHome = () => {
     return (
         <div className="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48 py-12 text-white">
-            {/* Title */}
-            {/* <h1 className="text-5xl md:text-6xl font-bold tracking-wide text-center">{shortAbout.title}</h1> */}
             <ArtifactHeading />
-            {/* <ArtifactHeading /> */}
-
-            {/* Description */}
             <div className="mt-6 max-w-4xl text-lg md:text-xl leading-relaxed text-center text-gray-200">
                 <h1>
                     {shortAbout.seoTextOne}
@@ -21,8 +16,6 @@ export const ShortAboutHome = () => {
                 <p className="mt-8 font-bold text-white">{shortAbout.announcement}</p>
                 <p className="mt-8 italic text-gray-200 text-lg md:text-xl">{shortAbout.statement}</p>
             </div>
-
-            {/* Members */}
             <div className="mt-8 w-full max-w-3xl text-center">
                 <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">Members</h2>
                 <ul className="grid gap-2 md:gap-4 text-lg md:text-xl text-gray-200">
@@ -31,8 +24,6 @@ export const ShortAboutHome = () => {
                     <li><span className="text-white font-semibold">{shortAbout.members.past.zet.name}</span> - {shortAbout.members.past.zet.role}</li>
                 </ul>
             </div>
-
-            {/* Call to Action */}
             <Link to={'/band'} className="mt-8">
                 <button className="px-6 py-3 text-lg md:text-xl font-semibold bg-gray-900 hover:bg-gray-700 transition duration-300 rounded-lg" aria-label="Learn more about the band">
                     {shortAbout.callToAction}
