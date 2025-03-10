@@ -30,7 +30,7 @@ export const Tracklist = ({ songs }: Props ) => {
                                     icon={faYoutube}
                                     size="lg"
                                     aria-label="YouTube link"
-                                    className={hoveredIndex === index ? 'fa-beat-fade' : 'opacity-50 hover:opacity-100 transition-opacity duration-200'}
+                                    className={hoveredIndex === index ? 'fa-beat-fade' : 'opacity-80 hover:opacity-100 transition-opacity duration-200'}
                                 />
                             </a>
                         )}

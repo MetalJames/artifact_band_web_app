@@ -8,7 +8,6 @@ export const LivePerformancesRecognition = () => {
             <div className="flex sm:flex-row flex-col py-6">
                 <div className="flex flex-col sm:w-2/5 w-full border rounded-md bg-gray-600 bg-opacity-30 p-4 sm:mr-8 mr-0 sm:mb-0 mb-4">
                     <div className="flex justify-between items-center gap-4">
-                        
                         <ImageWithModal 
                             smallSrc={bandInfo.livePerformancesAndRecognition.images.imageOne.small.src} 
                             largeSrc={bandInfo.livePerformancesAndRecognition.images.imageOne.full.src} 
@@ -16,15 +15,10 @@ export const LivePerformancesRecognition = () => {
                             className="w-1/2 h-40 object-cover rounded-lg shadow-md"
                         />
                         <ImageWithModal 
-                            // smallSrc={bandInfo.livePerformancesAndRecognition.images.imageTwo.full.src} 
                             largeSrc={bandInfo.livePerformancesAndRecognition.images.imageTwo.full.src} 
                             alt={bandInfo.livePerformancesAndRecognition.images.imageTwo.full.alt} 
                             className="w-1/3 h-40 object-cover rounded-lg shadow-md"
                         />
-                        
-                        
-                        {/* <img src={bandInfo.livePerformancesAndRecognition.images.imageOne.small.src} alt={bandInfo.livePerformancesAndRecognition.images.imageOne.small.alt} className="w-1/2 h-40 object-cover rounded-lg shadow-md"/>
-                        <img src={bandInfo.livePerformancesAndRecognition.images.imageTwo.full.src} alt={bandInfo.livePerformancesAndRecognition.images.imageTwo.full.alt} className="w-1/3 h-40 object-cover rounded-lg shadow-md"/> */}
                     </div>
                     <p className="text-sm mt-2 border-t pt-2">
                         {bandInfo.livePerformancesAndRecognition.captions.introText}{" "}

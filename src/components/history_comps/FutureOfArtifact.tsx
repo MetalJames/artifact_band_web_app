@@ -13,7 +13,6 @@ export const FutureOfArtifact = () => {
                 alt="Artifact Band Logo" 
                 className="sm:w-1/3 w-full mx-auto"
             />
-            {/* <img src={Artifact} alt="Artifact Band" className="sm:w-1/3 w-full mx-auto"/> */}
         </div>
     )
 };
