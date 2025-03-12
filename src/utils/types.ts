@@ -44,3 +44,18 @@ export type Album = {
     songs?: Song[];
     albumInfo?: AlbumInfo;
 }
+
+export type ImageWithModalProps = {
+    smallSrc?: string;
+    largeSrc: string;
+    alt: string;
+    caption?: string;
+    className?: string;
+};
+
+export type ImageModalProps = {
+    imageSrc: string;
+    caption?: string;
+    isOpen: boolean;
+    onClose: () => void;
+};

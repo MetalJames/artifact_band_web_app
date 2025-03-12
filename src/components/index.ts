@@ -8,3 +8,7 @@ export { ArtifactYouTube } from "./home_comps/ArtifactYouTube";
 export { Tracklist } from "./album_comps/Tracklist";
 export { AlbumInfo } from "./album_comps/AlbumInfo";
 export { ErrorBoundary } from "./ErrorBoundary";
+export { ScrollToTop } from "./ScrollToTop";
+export { MusicPlayer } from "./MusicPlayer";
+export { SEO } from "./SEO";
+export { ImageWithModal } from "./ImageWithModal";

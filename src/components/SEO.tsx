@@ -16,10 +16,9 @@ export const SEO = ({
     return (
         <Helmet>
             <title>{title}</title>
+            
             <meta name="description" content={description} />
             <meta name="robots" content="index, follow" />
-            
-            {/* Open Graph (Social Media Preview) */}
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
@@ -27,15 +26,11 @@ export const SEO = ({
             <meta property="og:url" content={url} />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="Artifact Band" />
-
             <meta name="keywords" content="Artifact, Artifact Band, Artifact Metal Band, Artifact Metal Music, Thrash Metal" />
-
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
             <meta property="og:image:type" content="image/png" />
 
-
-            {/* Canonical URL (Prevents duplicate content issues) */}
             <link rel="canonical" href="https://artifact-band.vercel.app/" />
         </Helmet>
     );

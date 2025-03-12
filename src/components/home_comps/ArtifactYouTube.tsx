@@ -1,4 +1,4 @@
-import { PlaySquare } from "lucide-react"; // ✅ Use alternative icon
+import { PlaySquare } from "lucide-react";
 
 export const ArtifactYouTube = () => {
     return (
@@ -16,11 +16,8 @@ export const ArtifactYouTube = () => {
                     <PlaySquare size={24} className="text-red-500" /> Visit the Official Artifact YouTube Channel
                 </a>
             </p>
-
-            {/* 🎶 Full Album Playlists */}
             <div className="mt-6 space-y-4">
                 <h4 className="text-lg font-semibold text-center text-gray-200">Listen to Full Albums:</h4>
-
                 <p className="text-center">
                     <a
                         href="https://www.youtube.com/watch?v=0q0XOynOhAI&list=PLsZtM2xO1Av6bntzo1YMDjMxV6txyhv6-"
@@ -31,7 +28,6 @@ export const ArtifactYouTube = () => {
                         🎧 Listen to *Artifact - No One* (Full Album)
                     </a>
                 </p>
-
                 <p className="text-center">
                     <a
                         href="https://www.youtube.com/watch?v=Tn_bWjefjHg&list=PLsZtM2xO1Av7UYxOvl_k4UZMMmE_KrKo9"

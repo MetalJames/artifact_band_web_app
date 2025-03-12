@@ -1,20 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { ImageModal } from "./ImageModal";
-
-type ImageWithModalProps = {
-    smallSrc?: string;  // Optional
-    largeSrc: string;
-    alt: string;
-    caption?: string;
-    className?: string; // Allows passing different width classes
-};
+import { ImageWithModalProps } from "../utils/types";
 
 export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: ImageWithModalProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [loadedLargeSrc, setLoadedLargeSrc] = useState<string | null>(null);
     const hasLoadedLarge = useRef(false);
 
-    // Load large image only when modal is opened
     useEffect(() => {
         if (isOpen && !hasLoadedLarge.current) {
             setLoadedLargeSrc(largeSrc);
@@ -22,7 +14,6 @@ export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: 
         }
     }, [isOpen, largeSrc]);
     
-    // Handle Escape key to close modal
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === "Escape") {
@@ -39,7 +30,6 @@ export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: 
 
     return (
         <>
-            {/* Small image (if exists), otherwise use large image */}
             <img 
                 src={smallSrc || largeSrc} 
                 alt={alt}
@@ -47,8 +37,6 @@ export const ImageWithModal = ({ smallSrc, largeSrc, alt, caption, className }: 
                 loading="lazy" 
                 onClick={() => setIsOpen(true)}
             />
-
-            {/* Image Modal */}
             <ImageModal 
                 imageSrc={loadedLargeSrc || largeSrc} 
                 caption={caption} 

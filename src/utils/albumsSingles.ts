@@ -64,7 +64,7 @@ export const albums = [
             { title: "Another Day", length: "2:23", youtubeLink: 'https://youtu.be/mZilyOg7Bx0' },
         ],
         albumInfo: {
-            introduction: "Recorded at Artifact Studio, No One represents a turning point in Artifact’s journey. After establishing a raw thrash metal foundation with Dead Silence (2012), this album fully shapes the band's signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. Unlike its predecessor, No One explores deeper themes of isolation, resilience, and self-reflection, both musically and lyrically. The recording process remained true to Artifact’s independent roots, with vocals captured in a makeshift studio, reinforcing the raw and personal nature of the album. \n\nThis album is also a testament to time and persistence—two of its tracks, No One and Lies We Live, were first brought to life in 2012 with original members Igor Grant and Viktor Matushek. Over the years, new ideas emerged, with songs written across more than a decade—from 2015 to 2020—before the final compositions, Who Am I and Drowning in Denial, were created in 2023, bringing the album full circle.",
+            introduction: "Recorded at Artifact Studio, No One represents a turning point in Artifact’s journey. After establishing a raw thrash metal foundation with Dead Silence (2012), this album fully shapes the band's signature sound—Artifact Metal—merging thrash intensity with groove-driven elements and drop D tuning. Unlike its predecessor, No One explores deeper themes of isolation, resilience, and self-reflection, both musically and lyrically. The recording process remained true to Artifact’s independent roots, with vocals captured in a makeshift studio, reinforcing the raw and personal nature of the album. \n\nThis album is also a testament to time and persistence—two of its tracks, No One and Lies We Live, were first brought to life in 2012 with original members Igor Grant and Viktor Matushek. Over the years, new ideas emerged, with songs written across more than a decade—from 2015 to 2020—before the final compositions, Who Am I and Drowning in Denial, were created in 2023, completed in January 2024 and recorded last, bringing the album full circle.",
             credits: {
                 members: [
                     { instrument: "All Instruments, Vocals, and Production", member: "Volodymyr Ruzhak" }
@@ -80,7 +80,7 @@ export const albums = [
                 coverArt: "Album cover art by Iuliia Polinovska transforms the album’s themes into a striking visual. A lone figure stands in a desolate world—a representation of isolation and resilience—while a path replaces their face, symbolizing the unknown journey ahead. The artwork reflects the album’s introspective nature, where destruction and hope exist side by side, mirroring the raw emotion embedded in every track.",
                 layoutDesign: "Cover Art & Layout Design: Iuliia Polinovska"
             },
-            specialThanks: "I would like to extend my gratitude to my family, friends, and fans who continue to inspire and support me through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
+            specialThanks: "We would like to extend our gratitude to our family, friends, and fans who continue to inspire and support us through every note. Special thanks to Iuliia Polinovska for her hard work on the album cover."
         }
     },
     {

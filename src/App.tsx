@@ -1,12 +1,9 @@
 import { background } from "./assets";
-import { NavBar, Footer, ErrorBoundary } from "./components";
-import { MusicPlayer } from "./components/MusicPlayer";
+import { NavBar, Footer, ErrorBoundary, ScrollToTop, MusicPlayer } from "./components";
 import { MusicPlayerProvider } from "./state/MusicPlayerContext/Provider";
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./AppRoutes";
 import { HelmetProvider } from "react-helmet-async";
-import { ScrollToTop } from "./components/ScrollToTop";
-// import { GoToTop } from "./components/GoToTop";
 
 function App() {
   return (
@@ -45,7 +42,6 @@ function App() {
                   <main className="flex-grow">
                     <AppRoutes />
                   </main>
-                  {/* <GoToTop /> */}
                   <ErrorBoundary
                     fallback={
                       <div className="text-gray-500 text-center p-4">
@@ -55,15 +51,7 @@ function App() {
                   >
                     <MusicPlayer />
                   </ErrorBoundary>
-                  {/* <ErrorBoundary
-                    fallback={
-                      <div className="text-gray-300 p-4">
-                        Footer not available.
-                      </div>
-                    }
-                  > */}
                     <Footer />
-                  {/* </ErrorBoundary> */}
                 </div>
               </div>
             </BrowserRouter>
